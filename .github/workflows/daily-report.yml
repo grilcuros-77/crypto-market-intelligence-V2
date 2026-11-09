@@ -1,0 +1,36 @@
+name: Daily market report
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+      - name: Generate report
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+        run: python pipeline/run_daily.py
+      - name: Commit report files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/public/reports
+          if ! git diff --cached --quiet; then
+            git commit -m "Update daily crypto market report"
+            git push
+          fi
