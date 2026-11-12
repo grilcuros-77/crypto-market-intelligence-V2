@@ -1,0 +1,38 @@
+{
+  "generated_at_utc": "2026-11-12T10:20:29+00:00",
+  "source": "CoinGecko public market data (USD)",
+  "markets": [
+    {
+      "symbol": "BTC",
+      "price_usd": 73419.0,
+      "change_since_last_observation_pct": -0.4099009019974176,
+      "rsi_14": 34.137991281308246,
+      "sma_50": 81385.60906239341,
+      "sma_200": 73143.33934350905,
+      "volume_last_observation_usd": 23029990007.81988,
+      "volume_previous_20_average_usd": 27026427037.74783
+    },
+    {
+      "symbol": "ETH",
+      "price_usd": 2044.36,
+      "change_since_last_observation_pct": -0.29158056207895244,
+      "rsi_14": 29.632374429673376,
+      "sma_50": 2456.6267767304416,
+      "sma_200": 2152.4121543391675,
+      "volume_last_observation_usd": 8473872625.937142,
+      "volume_previous_20_average_usd": 10773647141.076897
+    },
+    {
+      "symbol": "AVAX",
+      "price_usd": 8.65,
+      "change_since_last_observation_pct": 3.3474021735261594,
+      "rsi_14": 42.99697460467712,
+      "sma_50": 9.757828655860909,
+      "sma_200": 8.109263271302922,
+      "volume_last_observation_usd": 235139911.92911208,
+      "volume_previous_20_average_usd": 231727675.04497617
+    }
+  ],
+  "analysis": "**Market overview**  \nBitcoin (BTC) is trading near $73,419, slightly below its recent average price over 200 days but well under its 50-day average. This mixed position suggests the price is close to a longer-term support level but has recently weakened. The 14-day Relative Strength Index (RSI) of about 34 indicates BTC is approaching \"oversold\" conditions, which sometimes points to potential buying interest after selling pressure. However, recent volume has decreased compared to the average, possibly indicating less trading activity or market conviction.\n\n**ETH and AVAX**  \nEthereum (ETH) is priced around $2,044, below both its 50-day and 200-day averages, with an RSI near 30, signaling a strongly oversold condition. This could mean the market might be under pressure but could also lead to a rebound if buying returns. Trading volume for ETH has dropped compared to recent averages, which might reflect less enthusiasm. Avalanche (AVAX), at $8.65, has gained about 3.3% recently and is above its longer-term average but below its 50-day average. Its RSI near 43 suggests neither strong oversold nor overbought conditions. AVAX\u2019s trading volume is steady, close to its average.  \n\n**Risk watch**  \nSeveral signals present conflicting messages. BTC and ETH are near oversold levels by RSI, which some traders see as a chance for a turnaround, yet both remain below key moving averages, traditionally bearish signs. Declining volume for these coins might hint at weakening momentum or lower market participation, which can increase price volatility or uncertainty. AVAX\u2019s recent price gain contrasts with continued trading below its shorter-term moving average, suggesting mixed trends. Beginners should recognize these contradictions mean market direction is unclear and underscore the risk of sudden moves.\n\n**What to monitor**  \nKeep an eye on price movements relative to the 50-day and 200-day averages, as crossing above or below these can signal changes in trend strength. Monitor RSI levels especially around 30 (oversold) and 70 (overbought) for potential shifts in momentum. Volume trends will be important\u2014rising volume on price moves can confirm trend strength, while falling volume may warn of weakening trends. Watching how BTC, ETH, and AVAX respond to these technical signals over time will help understand if buying or selling pressure is increasing or easing.",
+  "disclaimer": "For information only, not financial advice. Crypto assets are volatile and you can lose your investment. Prices are in USD, not USDC or EUR."
+}
