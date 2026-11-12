@@ -9,12 +9,22 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT_DIR = ROOT / "web" / "public" / "reports"
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
-SYMBOLS = ["BTCUSDC", "ETHUSDC", "AVAXUSDC"]
-BINANCE = "https://api.binance.com"
+COINS = {"bitcoin": "BTC", "ethereum": "ETH", "avalanche-2": "AVAX"}
+BASE_URL = "https://api.coingecko.com/api/v3"
 
 
 def get_json(path, params=None):
-    response = requests.get(BINANCE + path, params=params, timeout=20)
+    key = os.environ.get("COINGECKO_API_KEY")
+    if not key:
+        raise RuntimeError("COINGECKO_API_KEY GitHub secret is missing")
+    response = requests.get(
+        BASE_URL + path,
+        params=params,
+        headers={"x-cg-demo-api-key": key, "accept": "application/json"},
+        timeout=30,
+    )
+    if response.status_code == 429:
+        raise RuntimeError("CoinGecko rate limit (429); retry later")
     response.raise_for_status()
     return response.json()
 
@@ -43,25 +53,40 @@ def rsi(values, period=14):
     return 100 - (100 / (1 + rs))
 
 
-def market_snapshot(symbol):
-    candles = get_json("/api/v3/klines", {"symbol": symbol, "interval": "1d", "limit": 210})
-    closes = [float(c[4]) for c in candles[:-1]]  # completed daily candles only
-    volumes = [float(c[5]) for c in candles[:-1]]
-    ticker = get_json("/api/v3/ticker/price", {"symbol": symbol})
-    current = float(ticker["price"])
-    previous = closes[-1]
-    change_24h = (current / previous - 1) * 100 if previous else 0
+def market_snapshot(coin_id, symbol, spot):
+    data = get_json(
+        f"/coins/{coin_id}/market_chart",
+        {"vs_currency": "usd", "days": 210, "precision": "full"},
+    )
+    prices = data["prices"]
+    volumes = data["total_volumes"]
+    # CoinGecko provides daily snapshots for ranges >90 days. Exclude the
+    # most recent (potentially partial) observation when it is today's date.
+    today = datetime.now(timezone.utc).date()
+    daily = [
+        (datetime.fromtimestamp(ts / 1000, tz=timezone.utc).date(), float(value))
+        for ts, value in prices
+    ]
+    daily = [(day, price) for day, price in daily if day < today]
+    if len(daily) < 200:
+        raise RuntimeError(f"Insufficient daily history for {symbol}: {len(daily)}")
+    closes = [price for _, price in daily]
+    last_close = closes[-1]
+    # Total volume is reported in USD by CoinGecko.
+    volume_values = [float(v) for _, v in volumes]
+    current = float(spot[coin_id]["usd"])
+    change = (current / last_close - 1) * 100
     return {
-        "symbol": symbol.replace("USDC", ""),
-        "pair": symbol,
-        "price_usdc": current,
-        "change_since_last_close_pct": change_24h,
+        "symbol": symbol,
+        "price_usd": current,
+        "change_since_last_observation_pct": change,
         "rsi_14": rsi(closes),
         "sma_50": sma(closes, 50),
         "sma_200": sma(closes, 200),
-        "volume_last_closed_day": volumes[-1] if volumes else None,
-        "volume_previous_20d_average": sum(volumes[-21:-1]) / 20 if len(volumes) >= 21 else None,
-        "last_completed_daily_candle_close": closes[-1],
+        "volume_last_observation_usd": volume_values[-1] if volume_values else None,
+        "volume_previous_20_average_usd": (
+            sum(volume_values[-21:-1]) / 20 if len(volume_values) >= 21 else None
+        ),
     }
 
 
@@ -101,13 +126,17 @@ def ai_summary(markets, timestamp):
 def main():
     now = datetime.now(timezone.utc)
     timestamp = now.isoformat(timespec="seconds")
-    markets = [market_snapshot(s) for s in SYMBOLS]
+    spot = get_json("/simple/price", {
+        "ids": ",".join(COINS),
+        "vs_currencies": "usd",
+    })
+    markets = [market_snapshot(coin_id, symbol, spot) for coin_id, symbol in COINS.items()]
     report = {
         "generated_at_utc": timestamp,
-        "source": "Binance public market data",
+        "source": "CoinGecko public market data (USD)",
         "markets": markets,
         "analysis": ai_summary(markets, timestamp),
-        "disclaimer": "For information only, not financial advice. Crypto assets are volatile and you can lose your investment."
+        "disclaimer": "For information only, not financial advice. Crypto assets are volatile and you can lose your investment. Prices are in USD, not USDC or EUR."
     }
     latest = REPORT_DIR / "latest.json"
     latest.write_text(json.dumps(report, indent=2), encoding="utf-8")
