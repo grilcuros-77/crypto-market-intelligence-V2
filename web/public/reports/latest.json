@@ -1,38 +1,38 @@
 {
-  "generated_at_utc": "2026-11-13T07:24:42+00:00",
+  "generated_at_utc": "2026-11-14T07:08:22+00:00",
   "source": "CoinGecko public market data (USD)",
   "markets": [
     {
       "symbol": "BTC",
-      "price_usd": 69115.0,
-      "change_since_last_observation_pct": -6.569019659767172,
-      "rsi_14": 35.246916086516435,
-      "sma_50": 81141.43102140662,
-      "sma_200": 73125.03872579212,
-      "volume_last_observation_usd": 41769557696.14315,
-      "volume_previous_20_average_usd": 27203146492.049397
+      "price_usd": 67371.0,
+      "change_since_last_observation_pct": -5.605815753080989,
+      "rsi_14": 29.7101574097088,
+      "sma_50": 80881.22265931475,
+      "sma_200": 73088.70991697947,
+      "volume_last_observation_usd": 34977475965.641396,
+      "volume_previous_20_average_usd": 28295895051.32965
     },
     {
       "symbol": "ETH",
-      "price_usd": 1943.32,
-      "change_since_last_observation_pct": -5.451656409886452,
-      "rsi_14": 30.200825287069875,
-      "sma_50": 2442.6816310458967,
-      "sma_200": 2151.0861813653923,
-      "volume_last_observation_usd": 14989443290.288193,
-      "volume_previous_20_average_usd": 10785261379.511236
+      "price_usd": 1904.49,
+      "change_since_last_observation_pct": -5.594490338832747,
+      "rsi_14": 28.33852907440391,
+      "sma_50": 2429.3417831674433,
+      "sma_200": 2149.32716360692,
+      "volume_last_observation_usd": 12025414230.45487,
+      "volume_previous_20_average_usd": 11087520487.307682
     },
     {
       "symbol": "AVAX",
-      "price_usd": 8.34,
-      "change_since_last_observation_pct": -2.030563334049018,
-      "rsi_14": 45.25654207391844,
-      "sma_50": 9.70202968814962,
-      "sma_200": 8.105005597415103,
-      "volume_last_observation_usd": 243124946.3759501,
-      "volume_previous_20_average_usd": 232499421.81252772
+      "price_usd": 8.09,
+      "change_since_last_observation_pct": -3.1383541419626626,
+      "rsi_14": 43.18479558935234,
+      "sma_50": 9.663949203743595,
+      "sma_200": 8.099446119480183,
+      "volume_last_observation_usd": 238879236.22646543,
+      "volume_previous_20_average_usd": 235756264.23289004
     }
   ],
-  "analysis": "**Market overview**  \nBitcoin (BTC) is currently priced at $69,115, showing a notable drop of about 6.6% since the last observation. Its recent trading volume is significantly higher than the 20-day average, which often indicates increased market activity. Bitcoin\u2019s Relative Strength Index (RSI) is around 35, a level that might suggest it is approaching being oversold, but it remains below its short-term (50-day) and medium-term (200-day) simple moving averages (SMAs), which can be seen as cautionary signals.\n\n**ETH and AVAX**  \nEthereum (ETH) is trading near $1,943, down roughly 5.5%. Like BTC, its RSI is low, nearing 30, which can also indicate the asset might be oversold, but it still sits well under both its 50-day and 200-day SMAs. Avalanche (AVAX) is at $8.34 with a smaller decline of about 2%. Its RSI is closer to a neutral position around 45. AVAX\u2019s current price remains below its 50-day average but just above its 200-day average, showing a more mixed technical picture compared to BTC and ETH.\n\n**Risk watch**  \nThe overall trend for BTC and ETH shows some bearish signals such as recent price declines, prices below short-term moving averages, and low RSI readings, which typically warn of potential continued weakness. However, the elevated trading volumes suggest active interest, which can sometimes lead to quick reversals. AVAX presents a more conflicted outlook with mixed indicators. For beginner investors, these conflicting signs highlight the importance of cautious observation without rushing into decisions.\n\n**What to monitor**  \nKeep an eye on the RSI levels to see if they move further down or begin rising, which could suggest changing momentum. Watch whether BTC, ETH, and AVAX prices cross above or below their key 50-day and 200-day moving averages as these often signal trend shifts. Additionally, pay attention to trading volumes compared to their past averages, as spikes could indicate increasing market activity or volatility. Staying informed on these technical indicators can help better understand market sentiment without relying on uncertain predictions.",
+  "analysis": "**Market overview**  \nBitcoin (BTC) and Ethereum (ETH) have both seen notable price drops recently, around 5.6%, with current prices at $67,371 and $1,904.49, respectively. Both show low Relative Strength Index (RSI) values\u2014around 29.7 for BTC and 28.3 for ETH\u2014suggesting they might be oversold, which sometimes signals potential price stabilization or a rebound. However, their current prices are well below their 50-day moving averages ($80,881 for BTC and $2,429 for ETH), emphasizing a recent downward trend. Trading volumes for BTC and ETH are above their recent 20-day averages, indicating increased market activity during these declines.\n\n**ETH and AVAX**  \nEthereum\u2019s 14-day RSI at 28.3 is similar to Bitcoin\u2019s low, highlighting oversold conditions but also potential caution. AVAX has fallen about 3.1%, priced at $8.09, with an RSI of 43.2, closer to a neutral level that suggests neither strong selling nor buying pressure. AVAX\u2019s current price sits near its 200-day average ($8.10) but below its 50-day average ($9.66), indicating mixed signals\u2014while a longer-term baseline is holding, short-term momentum appears weaker. AVAX\u2019s trading volume remains steady compared to its recent average.\n\n**Risk watch**  \nDifferent signals create conflicting interpretations. Low RSI values may attract interest from buyers hoping for a bounce, yet prices remain significantly below shorter-term averages, underscoring persistent bearish momentum. Elevated trading volumes during price drops can indicate strong selling pressure or panic, which could increase volatility. For a beginner, it\u2019s important to note that these indicators do not guarantee direction, and rapid changes can occur.\n\n**What to monitor**  \nWatch how prices interact with their 50-day and 200-day moving averages, as movements above or below these can hint at changing trends. Keep an eye on RSI to see if oversold conditions resolve or worsen. Volume trends are also important\u2014sustained high volume can amplify moves, while falling volume might indicate weakening momentum. Staying informed about changes in these factors can help understand market sentiment without making assumptions about certainty.",
   "disclaimer": "For information only, not financial advice. Crypto assets are volatile and you can lose your investment. Prices are in USD, not USDC or EUR."
 }
