@@ -1,0 +1,38 @@
+{
+  "generated_at_utc": "2026-11-15T07:11:21+00:00",
+  "source": "CoinGecko public market data (USD)",
+  "markets": [
+    {
+      "symbol": "BTC",
+      "price_usd": 64436.0,
+      "change_since_last_observation_pct": -5.676326291452083,
+      "rsi_14": 24.78321847449996,
+      "sma_50": 80559.93753816515,
+      "sma_200": 73043.44453999918,
+      "volume_last_observation_usd": 51866365472.01543,
+      "volume_previous_20_average_usd": 29787539143.84516
+    },
+    {
+      "symbol": "ETH",
+      "price_usd": 1792.76,
+      "change_since_last_observation_pct": -7.220676763452694,
+      "rsi_14": 24.67276976504573,
+      "sma_50": 2414.2449430959277,
+      "sma_200": 2147.46916225814,
+      "volume_last_observation_usd": 20667676316.73316,
+      "volume_previous_20_average_usd": 11638720281.643166
+    },
+    {
+      "symbol": "AVAX",
+      "price_usd": 7.22,
+      "change_since_last_observation_pct": -12.313661277174603,
+      "rsi_14": 41.67371166492804,
+      "sma_50": 9.624645839792327,
+      "sma_200": 8.094284013831633,
+      "volume_last_observation_usd": 376101421.0608485,
+      "volume_previous_20_average_usd": 243730588.44324097
+    }
+  ],
+  "analysis": "**Market overview**  \nBitcoin (BTC) and Ethereum (ETH) have both seen notable price declines recently, with BTC down about 5.7% and ETH down 7.2% since the last check. Their current prices, $64,436 for BTC and $1,792.76 for ETH, are well below their 50-day average prices ($80,560 for BTC and $2,414 for ETH), which can be a bearish signal. Additionally, their 14-day Relative Strength Index (RSI) values are around 25, suggesting these assets might be oversold, which sometimes precedes a price rebound but does not guarantee it. Volume traded for both assets has surged above their recent 20-day averages, indicating increased market activity amid the sell-off.\n\n**ETH and AVAX**  \nEthereum\u2019s price is below both its medium (50-day average) and long-term (200-day average of $2,147) moving averages, reinforcing a cautious outlook. Its RSI is also low, similar to Bitcoin\u2019s, which highlights potential overselling but also unresolved market weakness. AVAX, meanwhile, has experienced a stronger recent decline of about 12.3%, and is trading below its 50-day ($9.62) and 200-day ($8.09) averages. However, AVAX\u2019s RSI of around 42 is higher than BTC and ETH, indicating relatively less extreme selling pressure. AVAX\u2019s trading volume has also picked up compared to its 20-day average, which could signal more active investor interest.\n\n**Risk watch**  \nSeveral bearish signals are evident: prices below key moving averages typically signal a downward trend, and such volume spikes during declines can mean stronger selling momentum. The low RSI for BTC and ETH suggests these assets might be oversold, but this does not assure an immediate recovery\u2014oversold conditions can persist or worsen. Conflicting signals appear as volume increases while prices fall, reflecting uncertainty and possibly heightened volatility. For beginners, these mixed signals highlight the risks involved and the importance of careful observation rather than rushing decisions.\n\n**What to monitor**  \nKeep an eye on how prices move relative to their 50-day and 200-day averages\u2014staying below these may indicate continued weakness. Watch the RSI values for signs of stabilization or reversal from oversold extremes. Volume trends are important: persistent high volume on declines could imply continued selling pressure, while a shift to rising prices with strong volume might indicate growing confidence. No indicator alone tells the full story, so it\u2019s important to assess these factors together and watch for any changes in market behavior.",
+  "disclaimer": "For information only, not financial advice. Crypto assets are volatile and you can lose your investment. Prices are in USD, not USDC or EUR."
+}
