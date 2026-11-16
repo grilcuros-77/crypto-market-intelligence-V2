@@ -1,0 +1,38 @@
+{
+  "generated_at_utc": "2026-11-16T08:53:25+00:00",
+  "source": "CoinGecko public market data (USD)",
+  "markets": [
+    {
+      "symbol": "BTC",
+      "price_usd": 64506.0,
+      "change_since_last_observation_pct": 0.6016253348975154,
+      "rsi_14": 19.908102438806424,
+      "sma_50": 80160.82793461603,
+      "sma_200": 72982.38639989038,
+      "volume_last_observation_usd": 30007889274.882355,
+      "volume_previous_20_average_usd": 30451717294.95466
+    },
+    {
+      "symbol": "ETH",
+      "price_usd": 1807.61,
+      "change_since_last_observation_pct": 2.214252356887836,
+      "rsi_14": 19.45350013722897,
+      "sma_50": 2395.796209319387,
+      "sma_200": 2144.8654326643996,
+      "volume_last_observation_usd": 11098028647.191687,
+      "volume_previous_20_average_usd": 11912969765.024197
+    },
+    {
+      "symbol": "AVAX",
+      "price_usd": 7.17,
+      "change_since_last_observation_pct": 1.0174251173788118,
+      "rsi_14": 30.594740837036014,
+      "sma_50": 9.553641513619905,
+      "sma_200": 8.083909220019663,
+      "volume_last_observation_usd": 179145886.23477447,
+      "volume_previous_20_average_usd": 244630685.3733335
+    }
+  ],
+  "analysis": "**Market overview**  \nBitcoin (BTC) is currently priced at $64,506, showing a modest increase of about 0.6% since the last check. The 14-day Relative Strength Index (RSI) is very low at 19.9, which can sometimes suggest the asset is oversold and might be due for a bounce. However, its current price is well below both the 50-day and 200-day Simple Moving Averages (SMAs) of around $80,161 and $72,982 respectively, which generally points to a bearish trend. Trading volume is roughly in line with recent averages, indicating stable market activity.\n\n**ETH and AVAX**  \nEthereum (ETH) has risen about 2.2% to $1,807.61. Like BTC, ETH\u2019s RSI is quite low at 19.5, potentially signaling oversold conditions. Its price remains below key 50-day and 200-day SMAs ($2,395.80 and $2,144.87), suggesting downward pressure. AVAX is priced at $7.17, up about 1%, with an RSI near 30.6, which is closer to a neutral level but still relatively low. AVAX\u2019s price is also below its 50-day and 200-day SMAs ($9.55 and $8.08), consistent with a downtrend. Volume for both ETH and AVAX is somewhat lower than their recent averages.\n\n**Risk watch**  \nThere are conflicting signals to be cautious about. Low RSI values might indicate these cryptocurrencies are oversold and could rebound, but prices remaining below major moving averages suggest ongoing weakness. Also, lower trading volumes compared to past averages may signal reduced market interest or liquidity risks. Since these indicators can move in different directions, they highlight uncertainty and reinforce the need to carefully watch how the market develops rather than assuming immediate recovery or further decline.\n\n**What to monitor**  \nFor beginners, it\u2019s important to watch whether prices move back above the 50-day and 200-day moving averages, which could indicate a strengthening trend. Changes in RSI moving out of oversold territory would also be a meaningful sign. Additionally, observing trading volume trends can provide clues about market interest. Staying informed on multiple indicators over time will help build a clearer picture of market sentiment and potential risks.",
+  "disclaimer": "For information only, not financial advice. Crypto assets are volatile and you can lose your investment. Prices are in USD, not USDC or EUR."
+}
