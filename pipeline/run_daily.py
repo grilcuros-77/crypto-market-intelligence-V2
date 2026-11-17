@@ -148,12 +148,64 @@ def historical_series(dates, closes):
     return rows
 
 
+
+def reconstructed_risk_history(dates, closes):
+    """Scores from completed daily observations only; no look-ahead data."""
+    output = []
+    for i in range(199, len(closes)):
+        past = closes[:i + 1]
+        momentum = macd(past)
+        strength = rsi(past)
+        vol = volatility_30d(past)
+        if momentum is None or strength is None or vol is None:
+            continue
+        assessment = risk_assessment(past[-1], sma(past, 50), sma(past, 200), momentum, strength, vol)
+        output.append({'date': dates[i].isoformat(), 'score': assessment['score'],
+                       'level': assessment['level']})
+    return output
+
+
+def opportunity_assessment(price, avg50, avg200, momentum, strength, vol, risk, volume_ratio):
+    """Conservative, non-personalized market-condition heuristic; not a trade instruction."""
+    if any(v is None for v in (price, avg50, avg200, momentum, strength, vol)):
+        return {'signal': 'Hold / Wait', 'agreement': 'Insufficient data',
+                'reasons': ['Not enough valid observations to assess market conditions.']}
+    histogram = momentum['histogram']
+    previous = momentum.get('previous_histogram')
+    improving = previous is not None and histogram > previous
+    worsening = previous is not None and histogram < previous
+    above_both = price > avg50 and price > avg200
+    below_both = price < avg50 and price < avg200
+    confirmation = [above_both, histogram > 0, improving, 40 <= strength <= 68,
+                    vol < 65, volume_ratio is not None and volume_ratio >= 1]
+    agreement = f'{sum(confirmation)} of 6 constructive conditions'
+    reasons = [f'Price is {"above" if above_both else "not above"} both moving averages.',
+               f'MACD histogram is {"positive" if histogram > 0 else "negative"} and {"improving" if improving else "not improving"}.',
+               f'RSI is {strength:.1f}; an oversold reading alone is not a buy signal.',
+               f'Annualized 30-day volatility is {vol:.1f}%.']
+    if volume_ratio is None:
+        reasons.append('Volume confirmation unavailable; signal remains conservative.')
+    else:
+        reasons.append(f'Latest completed daily volume is {volume_ratio:.2f}× its previous 20-observation average.')
+    if risk['score'] >= 75 and below_both and histogram < 0 and worsening:
+        signal = 'Strong Risk Warning'
+    elif risk['score'] >= 65 and below_both and histogram < 0:
+        signal = 'Consider Reducing'
+    elif sum(confirmation) >= 5 and risk['score'] < 40 and volume_ratio is not None:
+        signal = 'Buy Opportunity'
+    elif sum(confirmation) >= 4 and risk['score'] < 60 and improving:
+        signal = 'Accumulate Cautiously'
+    else:
+        signal = 'Hold / Wait'
+    return {'signal': signal, 'agreement': agreement, 'reasons': reasons,
+            'note': 'Market-only indicator. It does not account for holdings, entry price, taxes or time horizon.'}
+
 def market_snapshot(coin_id, symbol, spot, today):
     data = get_json(f'/coins/{coin_id}/market_chart',
-                    {'vs_currency': 'usd', 'days': 210, 'precision': 'full'})
+                    {'vs_currency': 'usd', 'days': 330, 'precision': 'full'})
     daily = completed_daily_observations(data['prices'], today)
     volume_daily = dict(completed_daily_observations(data['total_volumes'], today))
-    if len(daily) < 200:
+    if len(daily) < 290:
         raise RuntimeError(f'Insufficient daily history for {symbol}: {len(daily)}')
     dates = [day for day, _ in daily]
     closes = [price for _, price in daily]
@@ -184,6 +236,9 @@ def market_snapshot(coin_id, symbol, spot, today):
         'volume_previous_20_average_usd': sum(previous20) / len(previous20) if len(previous20) == 20 else None,
         'last_completed_observation_date_utc': dates[-1].isoformat(),
         'history': historical_series(dates, closes),
+        'risk_history': reconstructed_risk_history(dates, closes),
+        'opportunity': opportunity_assessment(current, average50, average200, momentum, strength, vol, risk,
+            volumes[-1] / (sum(previous20) / 20) if len(previous20) == 20 and sum(previous20) > 0 and volumes[-1] is not None else None),
     }
 
 
@@ -193,13 +248,13 @@ def ai_summary(markets, timestamp):
         raise RuntimeError('OPENAI_API_KEY GitHub secret is missing')
     prompt = {
         'timestamp_utc': timestamp,
-        'markets': markets,
+        'markets': [{k: v for k, v in m.items() if k not in ('history', 'risk_history')} for m in markets],
         'instructions': (
             'Write a concise, cautious market briefing for a beginner following BTC, ETH, AVAX. '
             'Use Markdown with headings: Market overview, ETH and AVAX, Risk watch, What to monitor. '
             'Interpret only the provided data. Explain the computed risk scores and their limitations. '
             'Do not invent news, support/resistance levels, macro events, or forecasts. '
-            'Do not recommend trades. Distinguish a possible oversold bounce from a confirmed recovery. '
+            'Describe the deterministic opportunity labels as market conditions, never personalized buy/sell advice. Do not override their labels. Distinguish a possible oversold bounce from a confirmed recovery. '
             'All change figures compare with last completed daily observation, not exactly 24 hours. '
             'All prices are spot snapshots in USD and EUR, not exchange-specific executable prices.'
         ),
@@ -220,11 +275,12 @@ def main():
     spot = get_json('/simple/price', {'ids': ','.join(COINS), 'vs_currencies': 'usd,eur'})
     markets = [market_snapshot(coin_id, symbol, spot, now.date()) for coin_id, symbol in COINS.items()]
     report = {
-        'schema_version': 3,
+        'schema_version': 4,
         'generated_at_utc': now.isoformat(timespec='seconds'),
         'source': 'CoinGecko Demo API, aggregated market data',
         'markets': markets,
         'analysis': ai_summary(markets, now.isoformat(timespec='seconds')),
+        'opportunity_methodology': 'Rule-based, market-only signal. Constructive conditions: price above both SMAs, positive MACD histogram, improving MACD histogram, RSI 40–68, volatility below 65%, and latest completed volume at least its previous 20-day average. Buy Opportunity requires at least 5/6 and risk below 40; Accumulate Cautiously requires at least 4/6, improving MACD and risk below 60. Downside warnings depend on high risk, price below both SMAs and negative MACD. Missing volume cannot qualify for Buy Opportunity. Signals are not trading instructions.',
         'risk_methodology': 'Heuristic score 0–100: below SMA200 +25; below SMA50 +20; SMA50 below SMA200 +15; negative MACD histogram +15; RSI <35 or >75 +10; annualized 30d volatility ≥40% +5, ≥65% +10, ≥100% +15. Low <25, Moderate 25–49, High 50–74, Extreme ≥75. Not a probability or a prediction.',
         'disclaimer': 'For information only, not financial advice. Crypto assets are volatile. Risk score is a heuristic, not a guarantee. EUR and USD spot prices are indicative.',
     }
