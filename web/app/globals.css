@@ -7,3 +7,19 @@
 
 /* V2.3: risk trends and opportunity assessments */
 .opportunity{border:1px solid #445779;border-radius:10px;background:#111e37;padding:12px;margin:15px 0;display:flex;flex-direction:column;gap:6px}.opportunity-label{color:#9db3da;font-size:10px;letter-spacing:1.2px;font-weight:700}.opportunity strong{font-size:15px}.opportunity small{color:#b5c5df}.opportunity details{color:#b8c8e4;font-size:12px;margin-top:4px}.opportunity summary{cursor:pointer}.opportunity li{margin:6px 0}.opportunity p{font-size:12px}.risk-trends .chart-heading{margin-top:12px}.risk-summary{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}.risk-summary span{font-size:12px;color:#cbd7ee;background:#172641;padding:9px 12px;border-radius:8px}.risk-chart-svg{display:block;width:100%;height:auto;touch-action:pan-y}.risk-chart-wrap{overflow:hidden}.risk-selected{font-size:13px;color:#c6d8f6;margin:12px 0}
+
+/* V2.3.1 — prominent opportunity indicators (presentation only) */
+.opportunity{gap:9px;border-left-width:4px}
+.opportunity--buy{border-left-color:#40c995}
+.opportunity--accumulate{border-left-color:#81d8ae}
+.opportunity--wait{border-left-color:#a9bad5}
+.opportunity--reduce{border-left-color:#f2b766}
+.opportunity--warning{border-left-color:#ff7777}
+.opportunity-badge{display:inline-flex;align-self:flex-start;max-width:100%;align-items:center;border-radius:7px;padding:8px 11px;font-size:12px;font-weight:800;letter-spacing:.45px;line-height:1.35}
+.opportunity-badge--buy{background:#153e35;color:#9df2c8;border:1px solid #327a5c}
+.opportunity-badge--accumulate{background:#1b3d38;color:#b3edcf;border:1px solid #477c67}
+.opportunity-badge--wait{background:#263650;color:#dbe6fa;border:1px solid #526780}
+.opportunity-badge--reduce{background:#4a3522;color:#ffdc9d;border:1px solid #91653c}
+.opportunity-badge--warning{background:#4b2731;color:#ffb7b7;border:1px solid #965060}
+.opportunity .opportunity-guidance{margin:0;color:#e0e8f8;font-size:12px;line-height:1.55}
+.opportunity>small{color:#b5c5df;font-size:11px}

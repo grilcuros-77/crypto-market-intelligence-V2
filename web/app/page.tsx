@@ -34,6 +34,17 @@ function pct(value: number) { return `${value >= 0 ? '+' : ''}${value.toFixed(2)
 function readable(value?: number | null) { return value == null ? '—' : value.toFixed(2); }
 function compact(value: number | null) { return value == null ? '—' : new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(value); }
 
+// Presentation-only mapping: preserve the deterministic signal from the daily report.
+function signalDisplay(signal: string): { label: string; tone: string; interpretation: string } {
+  switch (signal) {
+    case 'Buy Opportunity': return { label: 'BUY OPPORTUNITY', tone: 'buy', interpretation: 'Constructive conditions are aligned. Consider whether a staged entry fits your risk limits; this is not a guarantee.' };
+    case 'Accumulate Cautiously': return { label: 'ACCUMULATE CAUTIOUSLY', tone: 'accumulate', interpretation: 'Some recovery evidence is present. Smaller, staged entries may reduce timing risk.' };
+    case 'Consider Reducing': return { label: 'CONSIDER REDUCING', tone: 'reduce', interpretation: 'Downside conditions are elevated. Review exposure and position size before adding risk.' };
+    case 'Strong Risk Warning': return { label: 'STRONG RISK WARNING', tone: 'warning', interpretation: 'Multiple downside indicators remain active. Prioritize capital preservation; wait for stronger confirmation before considering new exposure.' };
+    default: return { label: 'HOLD / WAIT', tone: 'wait', interpretation: 'Signals are mixed or incomplete. Waiting for clearer evidence may be preferable to acting now.' };
+  }
+}
+
 // Render a deliberately small, safe Markdown subset without raw HTML or injected markup.
 function Inline({ text }: { text: string }) {
   return <>{text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
@@ -57,7 +68,7 @@ export default function Home() {
   const report = loadReport();
   return <main className="shell">
     <header className="top">
-      <div><div className="eyebrow">DAILY MARKET MONITOR · V2.3</div><h1>Crypto Market Intelligence</h1><p className="sub">BTC, ETH and AVAX · Independent market analysis · No trading account connection</p></div>
+      <div><div className="eyebrow">DAILY MARKET MONITOR · V2.3.1</div><h1>Crypto Market Intelligence</h1><p className="sub">BTC, ETH and AVAX · Independent market analysis · No trading account connection</p></div>
       <div className="stamp">{report ? `Updated ${new Date(report.generated_at_utc).toLocaleString('en-GB', { timeZone: 'Europe/Ljubljana', dateStyle: 'medium', timeStyle: 'short' })} (Slovenia)` : 'Awaiting first report'}</div>
     </header>
     {!report ? <section className="panel"><h2>No report yet</h2><p>The dashboard will populate after the first successful GitHub Actions run.</p></section> : <>
@@ -68,7 +79,13 @@ export default function Home() {
           <div className="price">{money(m.price_usd, 'USD')}</div>
           <div className="eur">{m.price_eur != null ? money(m.price_eur, 'EUR') : 'EUR price pending'}</div>
           {m.risk && <div className="riskrow"><span className="riskpill">{m.risk.trend} trend</span><span className="riskpill">Risk: {m.risk.level} ({m.risk.score}/100)</span></div>}
-          {m.opportunity && <div className="opportunity"><div className="opportunity-label">MARKET OPPORTUNITY SIGNAL</div><strong>{m.opportunity.signal}</strong><small>{m.opportunity.agreement}</small><details><summary>Why this assessment?</summary><ul>{m.opportunity.reasons.map((reason, i) => <li key={i}>{reason}</li>)}</ul><p>{m.opportunity.note}</p></details></div>}
+          {m.opportunity && <div className={`opportunity opportunity--${signalDisplay(m.opportunity.signal).tone}`}>
+            <div className="opportunity-label">MARKET OPPORTUNITY SIGNAL</div>
+            <div className={`opportunity-badge opportunity-badge--${signalDisplay(m.opportunity.signal).tone}`}>{signalDisplay(m.opportunity.signal).label}</div>
+            <p className="opportunity-guidance">{signalDisplay(m.opportunity.signal).interpretation}</p>
+            <small>{m.opportunity.agreement}</small>
+            <details><summary>Why this assessment?</summary><ul>{m.opportunity.reasons.map((reason, i) => <li key={i}>{reason}</li>)}</ul><p>{m.opportunity.note}</p></details>
+          </div>}
           <div className="metrics">
             <div><small>RSI (14)</small><b>{readable(m.rsi_14)}</b></div>
             <div><small>SMA 50 (USD)</small><b>{m.sma_50 == null ? '—' : money(m.sma_50, 'USD')}</b></div>
