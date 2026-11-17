@@ -1,10 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import MarketCharts from './market-charts';
 
 type Risk = { score: number; level: string; trend: string; factors: string[] };
 type Macd = { line: number; signal: number; histogram: number; previous_histogram: number | null };
+type HistoryPoint = { date: string; price_usd: number; sma_50: number | null; sma_200: number | null; rsi_14: number | null };
 type Market = {
-  symbol: string; price_usd: number; price_eur?: number;
+  symbol: string; price_usd: number; price_eur?: number; history?: HistoryPoint[];
   change_since_last_observation_pct: number;
   rsi_14: number | null; sma_50: number | null; sma_200: number | null;
   macd?: Macd; volatility_30d_annualized_pct?: number;
@@ -52,11 +54,11 @@ export default function Home() {
   const report = loadReport();
   return <main className="shell">
     <header className="top">
-      <div><div className="eyebrow">DAILY MARKET MONITOR · V2.1</div><h1>Crypto Market Intelligence</h1><p className="sub">BTC, ETH and AVAX · Independent market analysis · No trading account connection</p></div>
+      <div><div className="eyebrow">DAILY MARKET MONITOR · V2.2</div><h1>Crypto Market Intelligence</h1><p className="sub">BTC, ETH and AVAX · Independent market analysis · No trading account connection</p></div>
       <div className="stamp">{report ? `Updated ${new Date(report.generated_at_utc).toLocaleString('en-GB', { timeZone: 'Europe/Ljubljana', dateStyle: 'medium', timeStyle: 'short' })} (Slovenia)` : 'Awaiting first report'}</div>
     </header>
     {!report ? <section className="panel"><h2>No report yet</h2><p>The dashboard will populate after the first successful GitHub Actions run.</p></section> : <>
-      {report.schema_version !== 2 && <section className="panel notice">V2.1 is deployed. Enhanced risk and EUR data will appear after the next successful daily report.</section>}
+      {(report.schema_version ?? 0) < 2 && <section className="panel notice">Enhanced risk and EUR data will appear after the next successful daily report.</section>}
       <section className="grid">
         {report.markets.map(m => <article className="coin" key={m.symbol}>
           <div className="coinhead"><span>{m.symbol}</span><span className={m.change_since_last_observation_pct >= 0 ? 'positive' : 'negative'}>{pct(m.change_since_last_observation_pct)}</span></div>
@@ -75,8 +77,9 @@ export default function Home() {
         </article>)}
       </section>
       <p className="footnote">Percentage change is since the last completed daily observation, not an exact 24-hour change. Spot prices are indicative.</p>
+      <MarketCharts markets={report.markets.map(m => ({ symbol: m.symbol, history: m.history ?? [] }))} />
       <section className="panel analysis"><div className="eyebrow">AI MARKET BRIEFING</div><Briefing content={report.analysis} /></section>
-      <section className="panel"><div className="eyebrow">DATA & METHODOLOGY</div><p>Source: {report.source}. RSI uses Wilder smoothing; MACD uses EMA (12, 26, 9); moving averages use completed daily USD observations. EUR prices are separate CoinGecko spot quotes.</p>{report.risk_methodology && <p><strong>Risk methodology:</strong> {report.risk_methodology}</p>}<p className="disclaimer">{report.disclaimer}</p></section>
+      <section className="panel"><div className="eyebrow">DATA & METHODOLOGY</div><p>Source: {report.source}. Historical charts show completed UTC daily observations, not live candles; moving averages use USD prices. RSI uses Wilder smoothing; MACD uses EMA (12, 26, 9); moving averages use completed daily USD observations. EUR prices are separate CoinGecko spot quotes.</p>{report.risk_methodology && <p><strong>Risk methodology:</strong> {report.risk_methodology}</p>}<p className="disclaimer">{report.disclaimer}</p></section>
     </>}
     <footer>Crypto Market Intelligence · Public read-only dashboard</footer>
   </main>;
