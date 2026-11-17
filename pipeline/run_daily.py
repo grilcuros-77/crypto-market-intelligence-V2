@@ -120,6 +120,34 @@ def completed_daily_observations(points, today):
     return sorted(by_day.items())
 
 
+def historical_series(dates, closes):
+    """Daily price, moving averages and Wilder RSI, all based on completed observations."""
+    rows = []
+    for i, (day, close) in enumerate(zip(dates, closes)):
+        # At most ~210 days, so simple rolling calculations are inexpensive.
+        rows.append({
+            'date': day.isoformat(),
+            'price_usd': round(close, 8),
+            'sma_50': round(sum(closes[i - 49:i + 1]) / 50, 8) if i >= 49 else None,
+            'sma_200': round(sum(closes[i - 199:i + 1]) / 200, 8) if i >= 199 else None,
+            'rsi_14': None,
+        })
+    period = 14
+    if len(closes) > period:
+        changes = [b - a for a, b in zip(closes, closes[1:])]
+        gain = sum(max(c, 0) for c in changes[:period]) / period
+        loss = sum(max(-c, 0) for c in changes[:period]) / period
+        def value(g, l):
+            return 100.0 if l == 0 and g else 50.0 if l == 0 else 100 - 100 / (1 + g / l)
+        rows[period]['rsi_14'] = round(value(gain, loss), 3)
+        for i in range(period + 1, len(closes)):
+            change = changes[i - 1]
+            gain = (gain * (period - 1) + max(change, 0)) / period
+            loss = (loss * (period - 1) + max(-change, 0)) / period
+            rows[i]['rsi_14'] = round(value(gain, loss), 3)
+    return rows
+
+
 def market_snapshot(coin_id, symbol, spot, today):
     data = get_json(f'/coins/{coin_id}/market_chart',
                     {'vs_currency': 'usd', 'days': 210, 'precision': 'full'})
@@ -155,6 +183,7 @@ def market_snapshot(coin_id, symbol, spot, today):
         'volume_last_observation_usd': volumes[-1],
         'volume_previous_20_average_usd': sum(previous20) / len(previous20) if len(previous20) == 20 else None,
         'last_completed_observation_date_utc': dates[-1].isoformat(),
+        'history': historical_series(dates, closes),
     }
 
 
@@ -191,7 +220,7 @@ def main():
     spot = get_json('/simple/price', {'ids': ','.join(COINS), 'vs_currencies': 'usd,eur'})
     markets = [market_snapshot(coin_id, symbol, spot, now.date()) for coin_id, symbol in COINS.items()]
     report = {
-        'schema_version': 2,
+        'schema_version': 3,
         'generated_at_utc': now.isoformat(timespec='seconds'),
         'source': 'CoinGecko Demo API, aggregated market data',
         'markets': markets,
