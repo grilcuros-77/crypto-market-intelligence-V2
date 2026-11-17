@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-17T07:24:00+00:00",
+  "generated_at_utc": "2026-11-17T07:27:41+00:00",
   "source": "CoinGecko Demo API, aggregated market data",
   "markets": [
     {
       "symbol": "BTC",
-      "price_usd": 64609.0,
-      "price_eur": 58711.0,
-      "change_since_last_observation_pct": -1.0661940301559203,
+      "price_usd": 64618.0,
+      "price_eur": 58700.0,
+      "change_since_last_observation_pct": -1.0524126025881153,
       "change_label": "Since last completed daily observation (not 24h change)",
       "rsi_14": 24.43197754332536,
       "sma_50": 79778.59925513255,
@@ -37,9 +37,9 @@
     },
     {
       "symbol": "ETH",
-      "price_usd": 1828.36,
-      "price_eur": 1661.45,
-      "change_since_last_observation_pct": -0.33611919510465604,
+      "price_usd": 1829.34,
+      "price_eur": 1661.8,
+      "change_since_last_observation_pct": -0.2826994073228173,
       "change_label": "Since last completed daily observation (not 24h change)",
       "rsi_14": 26.23119820897189,
       "sma_50": 2378.5746364451384,
@@ -69,9 +69,9 @@
     },
     {
       "symbol": "AVAX",
-      "price_usd": 7.21,
-      "price_eur": 6.55,
-      "change_since_last_observation_pct": -1.3358823698261246,
+      "price_usd": 7.22,
+      "price_eur": 6.56,
+      "change_since_last_observation_pct": -1.1990389334458618,
       "change_label": "Since last completed daily observation (not 24h change)",
       "rsi_14": 34.08048631817715,
       "sma_50": 9.48292435815407,
@@ -100,7 +100,7 @@
       "last_completed_observation_date_utc": "2026-11-16"
     }
   ],
-  "analysis": "# Market Overview\n\nBitcoin (BTC) has declined by approximately 1.07% since the last completed daily observation, currently priced at around $64,609 (EUR 58,711). The technical indicators show a bearish tone: BTC\u2019s price is well below both its 50-day and 200-day moving averages, the MACD histogram remains negative, and the 14-day RSI is in the low 24 range, signaling potential oversold conditions. Volatility remains elevated at about 43.6% annualized over 30 days. Trading volume has increased notably compared to the recent 20-day average.\n\nEthereum (ETH) also shows bearish momentum, down around 0.34% since the last daily close, currently priced near $1,828 (EUR 1,661). ETH\u2019s price is below both its 50-day and 200-day averages, the MACD histogram is negative, and RSI is similarly low at about 26, indicative of oversold territory. Its 30-day annualized volatility is even higher than BTC\u2019s, at nearly 59%.\n\nAvalanche (AVAX) faces the sharpest relative drop of approximately 1.34%, at $7.21 (EUR 6.55). Like BTC and ETH, AVAX is trading below key moving averages with a negative MACD histogram. Its RSI at 34 is higher than BTC and ETH but still in a zone that can suggest overselling. AVAX\u2019s volatility is the highest among the three at over 78%, pointing to elevated short-term risk and price swings.\n\n# ETH and AVAX\n\nWhile ETH and AVAX both show bearish trends similar to BTC, AVAX exhibits the most extreme risk profile by the metrics given. High volatility coupled with negative momentum indicators increases the potential for swift price moves, which can be challenging for beginners. The RSI values near or below the typical oversold threshold (around 30) may hint at the possibility of an oversold bounce, but this should be distinguished from a confirmed recovery, which would require sustained improvements in momentum and price action above moving averages.\n\n# Risk Watch\n\nAll three assets carry an \"Extreme\" risk level with a risk score of 75 for BTC and ETH, and 80 for AVAX. These scores are based on five factors:\n\n- Price below the 200-day average (+25 points)\n- Price below the 50-day average (+20 points)\n- Negative MACD histogram (+15 points)\n- RSI in extreme (oversold) zone (+10 points)\n- High 30-day annualized volatility (\u226540% for BTC/ETH with +5 points; \u226565% for AVAX with +10 points)\n\nThese risk scores reflect technical weakness and heightened volatility but have limitations. They do not account for external market events, broader macroeconomic factors, or fundamental changes. They also do not predict timing or magnitude of price moves, so a high score indicates caution rather than an immediate expected drop.\n\n# What to Monitor\n\n- Momentum indicators (MACD and RSI) for signs shifting from oversold conditions to sustained positive momentum.\n- Price action relative to 50-day and 200-day moving averages for evidence of trend stabilization or reversal.\n- Volume trends: increased or decreased trading volume may signal strengthening or weakening of price moves.\n- Changes in volatility to understand potential risk of large price swings.\n\nGiven the current data, any price uptick may represent a short-term, oversold bounce rather than a confirmed recovery until supported by broader technical improvement and trend changes.",
+  "analysis": "# Market overview  \nBitcoin (BTC), Ethereum (ETH), and Avalanche (AVAX) all show continued weakness as of the latest daily observation (2026-11-16). Prices are below their 50-day and 200-day moving averages, indicating ongoing bearish momentum across these markets. Volume levels have increased compared to their recent 20-day averages, suggesting active trading amid this downward pressure. The Relative Strength Index (RSI) values for BTC and ETH are in the low-to-mid 20s, signaling potential oversold conditions but not confirmed recoveries. AVAX\u2019s RSI is slightly higher near 34 but still below neutral. The Moving Average Convergence Divergence (MACD) histogram readings remain negative for all three, reinforcing bearish trends.\n\n# ETH and AVAX  \nEthereum is priced at $1,829.34 (1,661.80 EUR), and Avalanche at $7.22 (6.56 EUR). Both assets are trading below their 50-day and 200-day SMAs, with negative MACD histograms indicating downward momentum is intact. ETH\u2019s RSI near 26 and AVAX\u2019s at 34 suggest oversold territory, which sometimes precedes a short-term bounce. However, these should not be confused with signs of sustained recovery. Volatility is particularly high for AVAX (annualized 78.5%), reflecting increased price swings that can affect risk and trading dynamics.\n\n# Risk watch  \nAll three cryptocurrencies have a computed \u201cExtreme\u201d risk score of 75 or 80, built from a combination of bearish technical factors:  \n- Price below long-term moving averages (+25 +20)  \n- Negative MACD histogram (+15)  \n- RSI in extreme oversold zones (+10)  \n- Elevated 30-day annualized volatility (+5 or +10)  \n\nThis scoring system highlights heightened downside risk but has limitations: it relies solely on recent price and technical indicator snapshots without accounting for fundamental changes, market sentiment shifts, or external events. Thus, while the current risk environment is clearly elevated, these scores are not absolute predictors of future price moves.\n\n# What to monitor  \n- RSI levels: Watch if RSI starts moving above 30\u201340, which may signal easing of oversold conditions.  \n- MACD histogram: A shift toward positive territory would be a more reliable indicator of momentum change.  \n- Price relation to moving averages: Sustained moves above the 50-day and 200-day SMAs are needed to consider bullish trend changes.  \n- Volume trends: Volume increases on price rises may support stronger bounces; volume drops on declines could indicate decreasing selling pressure.  \n\nFor beginners, keep in mind that potential oversold bounces can occur without confirming a full recovery. Careful observation of multiple indicators together is important before concluding trend reversals.",
   "risk_methodology": "Heuristic score 0\u2013100: below SMA200 +25; below SMA50 +20; SMA50 below SMA200 +15; negative MACD histogram +15; RSI <35 or >75 +10; annualized 30d volatility \u226540% +5, \u226565% +10, \u2265100% +15. Low <25, Moderate 25\u201349, High 50\u201374, Extreme \u226575. Not a probability or a prediction.",
   "disclaimer": "For information only, not financial advice. Crypto assets are volatile. Risk score is a heuristic, not a guarantee. EUR and USD spot prices are indicative."
 }
