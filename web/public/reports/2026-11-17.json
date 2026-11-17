@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "generated_at_utc": "2026-11-17T07:24:00+00:00",
+  "source": "CoinGecko Demo API, aggregated market data",
+  "markets": [
+    {
+      "symbol": "BTC",
+      "price_usd": 64609.0,
+      "price_eur": 58711.0,
+      "change_since_last_observation_pct": -1.0661940301559203,
+      "change_label": "Since last completed daily observation (not 24h change)",
+      "rsi_14": 24.43197754332536,
+      "sma_50": 79778.59925513255,
+      "sma_200": 72929.98801774654,
+      "macd": {
+        "line": -3510.0023003293027,
+        "signal": -2365.8513382038946,
+        "histogram": -1144.1509621254081,
+        "previous_histogram": -1070.2603277586354
+      },
+      "volatility_30d_annualized_pct": 43.570426729620614,
+      "risk": {
+        "score": 75,
+        "level": "Extreme",
+        "trend": "Bearish",
+        "factors": [
+          "Price below 200-day average (+25)",
+          "Price below 50-day average (+20)",
+          "Negative MACD histogram (+15)",
+          "RSI in extreme zone (+10)",
+          "30-day annualized volatility \u226540% (+5)"
+        ]
+      },
+      "volume_last_observation_usd": 41807995533.70507,
+      "volume_previous_20_average_usd": 29787539143.84516,
+      "last_completed_observation_date_utc": "2026-11-16"
+    },
+    {
+      "symbol": "ETH",
+      "price_usd": 1828.36,
+      "price_eur": 1661.45,
+      "change_since_last_observation_pct": -0.33611919510465604,
+      "change_label": "Since last completed daily observation (not 24h change)",
+      "rsi_14": 26.23119820897189,
+      "sma_50": 2378.5746364451384,
+      "sma_200": 2142.769963391334,
+      "macd": {
+        "line": -138.3896934625568,
+        "signal": -101.85166309012055,
+        "histogram": -36.53803037243625,
+        "previous_histogram": -36.25586121564528
+      },
+      "volatility_30d_annualized_pct": 58.68411460323668,
+      "risk": {
+        "score": 75,
+        "level": "Extreme",
+        "trend": "Bearish",
+        "factors": [
+          "Price below 200-day average (+25)",
+          "Price below 50-day average (+20)",
+          "Negative MACD histogram (+15)",
+          "RSI in extreme zone (+10)",
+          "30-day annualized volatility \u226540% (+5)"
+        ]
+      },
+      "volume_last_observation_usd": 15593258108.059082,
+      "volume_previous_20_average_usd": 11638720281.643166,
+      "last_completed_observation_date_utc": "2026-11-16"
+    },
+    {
+      "symbol": "AVAX",
+      "price_usd": 7.21,
+      "price_eur": 6.55,
+      "change_since_last_observation_pct": -1.3358823698261246,
+      "change_label": "Since last completed daily observation (not 24h change)",
+      "rsi_14": 34.08048631817715,
+      "sma_50": 9.48292435815407,
+      "sma_200": 8.074850180738583,
+      "macd": {
+        "line": -0.43701047769672385,
+        "signal": -0.3723147520902942,
+        "histogram": -0.06469572560642967,
+        "previous_histogram": -0.036944040433389946
+      },
+      "volatility_30d_annualized_pct": 78.45722237321692,
+      "risk": {
+        "score": 80,
+        "level": "Extreme",
+        "trend": "Bearish",
+        "factors": [
+          "Price below 200-day average (+25)",
+          "Price below 50-day average (+20)",
+          "Negative MACD histogram (+15)",
+          "RSI in extreme zone (+10)",
+          "30-day annualized volatility \u226565% (+10)"
+        ]
+      },
+      "volume_last_observation_usd": 260528847.42996743,
+      "volume_previous_20_average_usd": 243730588.44324097,
+      "last_completed_observation_date_utc": "2026-11-16"
+    }
+  ],
+  "analysis": "# Market Overview\n\nBitcoin (BTC) has declined by approximately 1.07% since the last completed daily observation, currently priced at around $64,609 (EUR 58,711). The technical indicators show a bearish tone: BTC\u2019s price is well below both its 50-day and 200-day moving averages, the MACD histogram remains negative, and the 14-day RSI is in the low 24 range, signaling potential oversold conditions. Volatility remains elevated at about 43.6% annualized over 30 days. Trading volume has increased notably compared to the recent 20-day average.\n\nEthereum (ETH) also shows bearish momentum, down around 0.34% since the last daily close, currently priced near $1,828 (EUR 1,661). ETH\u2019s price is below both its 50-day and 200-day averages, the MACD histogram is negative, and RSI is similarly low at about 26, indicative of oversold territory. Its 30-day annualized volatility is even higher than BTC\u2019s, at nearly 59%.\n\nAvalanche (AVAX) faces the sharpest relative drop of approximately 1.34%, at $7.21 (EUR 6.55). Like BTC and ETH, AVAX is trading below key moving averages with a negative MACD histogram. Its RSI at 34 is higher than BTC and ETH but still in a zone that can suggest overselling. AVAX\u2019s volatility is the highest among the three at over 78%, pointing to elevated short-term risk and price swings.\n\n# ETH and AVAX\n\nWhile ETH and AVAX both show bearish trends similar to BTC, AVAX exhibits the most extreme risk profile by the metrics given. High volatility coupled with negative momentum indicators increases the potential for swift price moves, which can be challenging for beginners. The RSI values near or below the typical oversold threshold (around 30) may hint at the possibility of an oversold bounce, but this should be distinguished from a confirmed recovery, which would require sustained improvements in momentum and price action above moving averages.\n\n# Risk Watch\n\nAll three assets carry an \"Extreme\" risk level with a risk score of 75 for BTC and ETH, and 80 for AVAX. These scores are based on five factors:\n\n- Price below the 200-day average (+25 points)\n- Price below the 50-day average (+20 points)\n- Negative MACD histogram (+15 points)\n- RSI in extreme (oversold) zone (+10 points)\n- High 30-day annualized volatility (\u226540% for BTC/ETH with +5 points; \u226565% for AVAX with +10 points)\n\nThese risk scores reflect technical weakness and heightened volatility but have limitations. They do not account for external market events, broader macroeconomic factors, or fundamental changes. They also do not predict timing or magnitude of price moves, so a high score indicates caution rather than an immediate expected drop.\n\n# What to Monitor\n\n- Momentum indicators (MACD and RSI) for signs shifting from oversold conditions to sustained positive momentum.\n- Price action relative to 50-day and 200-day moving averages for evidence of trend stabilization or reversal.\n- Volume trends: increased or decreased trading volume may signal strengthening or weakening of price moves.\n- Changes in volatility to understand potential risk of large price swings.\n\nGiven the current data, any price uptick may represent a short-term, oversold bounce rather than a confirmed recovery until supported by broader technical improvement and trend changes.",
+  "risk_methodology": "Heuristic score 0\u2013100: below SMA200 +25; below SMA50 +20; SMA50 below SMA200 +15; negative MACD histogram +15; RSI <35 or >75 +10; annualized 30d volatility \u226540% +5, \u226565% +10, \u2265100% +15. Low <25, Moderate 25\u201349, High 50\u201374, Extreme \u226575. Not a probability or a prediction.",
+  "disclaimer": "For information only, not financial advice. Crypto assets are volatile. Risk score is a heuristic, not a guarantee. EUR and USD spot prices are indicative."
+}
