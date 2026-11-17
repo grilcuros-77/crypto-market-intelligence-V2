@@ -1,22 +1,25 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import MarketCharts from './market-charts';
+import RiskTrends from './risk-trends';
 
 type Risk = { score: number; level: string; trend: string; factors: string[] };
 type Macd = { line: number; signal: number; histogram: number; previous_histogram: number | null };
 type HistoryPoint = { date: string; price_usd: number; sma_50: number | null; sma_200: number | null; rsi_14: number | null };
+type Opportunity = { signal: string; agreement: string; reasons: string[]; note?: string };
+type RiskPoint = { date: string; score: number; level: string };
 type Market = {
   symbol: string; price_usd: number; price_eur?: number; history?: HistoryPoint[];
   change_since_last_observation_pct: number;
   rsi_14: number | null; sma_50: number | null; sma_200: number | null;
   macd?: Macd; volatility_30d_annualized_pct?: number;
-  risk?: Risk; volume_last_observation_usd: number | null;
+  risk?: Risk; opportunity?: Opportunity; risk_history?: RiskPoint[]; volume_last_observation_usd: number | null;
   volume_previous_20_average_usd: number | null;
   last_completed_observation_date_utc?: string;
 };
 type Report = {
   schema_version?: number; generated_at_utc: string; source: string;
-  markets: Market[]; analysis: string; disclaimer: string; risk_methodology?: string;
+  markets: Market[]; analysis: string; disclaimer: string; risk_methodology?: string; opportunity_methodology?: string;
 };
 
 function loadReport(): Report | null {
@@ -54,7 +57,7 @@ export default function Home() {
   const report = loadReport();
   return <main className="shell">
     <header className="top">
-      <div><div className="eyebrow">DAILY MARKET MONITOR · V2.2</div><h1>Crypto Market Intelligence</h1><p className="sub">BTC, ETH and AVAX · Independent market analysis · No trading account connection</p></div>
+      <div><div className="eyebrow">DAILY MARKET MONITOR · V2.3</div><h1>Crypto Market Intelligence</h1><p className="sub">BTC, ETH and AVAX · Independent market analysis · No trading account connection</p></div>
       <div className="stamp">{report ? `Updated ${new Date(report.generated_at_utc).toLocaleString('en-GB', { timeZone: 'Europe/Ljubljana', dateStyle: 'medium', timeStyle: 'short' })} (Slovenia)` : 'Awaiting first report'}</div>
     </header>
     {!report ? <section className="panel"><h2>No report yet</h2><p>The dashboard will populate after the first successful GitHub Actions run.</p></section> : <>
@@ -65,6 +68,7 @@ export default function Home() {
           <div className="price">{money(m.price_usd, 'USD')}</div>
           <div className="eur">{m.price_eur != null ? money(m.price_eur, 'EUR') : 'EUR price pending'}</div>
           {m.risk && <div className="riskrow"><span className="riskpill">{m.risk.trend} trend</span><span className="riskpill">Risk: {m.risk.level} ({m.risk.score}/100)</span></div>}
+          {m.opportunity && <div className="opportunity"><div className="opportunity-label">MARKET OPPORTUNITY SIGNAL</div><strong>{m.opportunity.signal}</strong><small>{m.opportunity.agreement}</small><details><summary>Why this assessment?</summary><ul>{m.opportunity.reasons.map((reason, i) => <li key={i}>{reason}</li>)}</ul><p>{m.opportunity.note}</p></details></div>}
           <div className="metrics">
             <div><small>RSI (14)</small><b>{readable(m.rsi_14)}</b></div>
             <div><small>SMA 50 (USD)</small><b>{m.sma_50 == null ? '—' : money(m.sma_50, 'USD')}</b></div>
@@ -77,9 +81,10 @@ export default function Home() {
         </article>)}
       </section>
       <p className="footnote">Percentage change is since the last completed daily observation, not an exact 24-hour change. Spot prices are indicative.</p>
+      <RiskTrends markets={report.markets.map(m => ({symbol: m.symbol, history: m.risk_history ?? []}))} />
       <MarketCharts markets={report.markets.map(m => ({ symbol: m.symbol, history: m.history ?? [] }))} />
       <section className="panel analysis"><div className="eyebrow">AI MARKET BRIEFING</div><Briefing content={report.analysis} /></section>
-      <section className="panel"><div className="eyebrow">DATA & METHODOLOGY</div><p>Source: {report.source}. Historical charts show completed UTC daily observations, not live candles; moving averages use USD prices. RSI uses Wilder smoothing; MACD uses EMA (12, 26, 9); moving averages use completed daily USD observations. EUR prices are separate CoinGecko spot quotes.</p>{report.risk_methodology && <p><strong>Risk methodology:</strong> {report.risk_methodology}</p>}<p className="disclaimer">{report.disclaimer}</p></section>
+      <section className="panel"><div className="eyebrow">DATA & METHODOLOGY</div><p>Source: {report.source}. Historical charts show completed UTC daily observations, not live candles; moving averages use USD prices. RSI uses Wilder smoothing; MACD uses EMA (12, 26, 9); moving averages use completed daily USD observations. EUR prices are separate CoinGecko spot quotes.</p>{report.risk_methodology && <p><strong>Risk methodology:</strong> {report.risk_methodology}</p>}{report.opportunity_methodology && <p><strong>Opportunity methodology:</strong> {report.opportunity_methodology}</p>}<p className="disclaimer">{report.disclaimer}</p></section>
     </>}
     <footer>Crypto Market Intelligence · Public read-only dashboard</footer>
   </main>;
