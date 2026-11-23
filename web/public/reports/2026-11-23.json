@@ -1,13 +1,13 @@
 {
-  "schema_version": 4,
-  "generated_at_utc": "2026-11-23T07:43:48+00:00",
+  "schema_version": 5,
+  "generated_at_utc": "2026-11-23T09:34:48+00:00",
   "source": "CoinGecko Demo API, aggregated market data",
   "markets": [
     {
       "symbol": "BTC",
-      "price_usd": 61438.0,
-      "price_eur": 55839.0,
-      "change_since_last_observation_pct": 2.19006953180918,
+      "price_usd": 61574.0,
+      "price_eur": 56061.0,
+      "change_since_last_observation_pct": 2.41627887222271,
       "change_label": "Since last completed daily observation (not 24h change)",
       "rsi_14": 22.636065152225513,
       "sma_50": 77160.50282148925,
@@ -2991,6 +2991,44 @@
           "level": "Extreme"
         }
       ],
+      "buying_opportunity": {
+        "score": 47,
+        "label": "Wait",
+        "factors": [
+          {
+            "name": "Price vs SMA200",
+            "points": 10,
+            "max": 25,
+            "detail": "+15.0% below the 200-day average (negative means above)."
+          },
+          {
+            "name": "Selling exhaustion (RSI)",
+            "points": 20,
+            "max": 20,
+            "detail": "RSI 22.6; oversold can remain oversold."
+          },
+          {
+            "name": "Recovery confirmation",
+            "points": 10,
+            "max": 25,
+            "detail": "MACD histogram -990.7191; improving: yes; above SMA50: no."
+          },
+          {
+            "name": "Completed 7-day trend",
+            "points": 0,
+            "max": 20,
+            "detail": "-6.2% across seven completed daily intervals."
+          },
+          {
+            "name": "Volatility",
+            "points": 7,
+            "max": 10,
+            "detail": "45.5% annualized 30-day volatility."
+          }
+        ],
+        "confirmation_cap_applied": false,
+        "note": "Independent, unvalidated heuristic; not a return probability. A high opportunity score can coexist with high position risk."
+      },
       "opportunity": {
         "signal": "Consider Reducing",
         "agreement": "3 of 6 constructive conditions",
@@ -3006,9 +3044,9 @@
     },
     {
       "symbol": "ETH",
-      "price_usd": 1721.23,
-      "price_eur": 1564.37,
-      "change_since_last_observation_pct": 2.2805331280296937,
+      "price_usd": 1727.15,
+      "price_eur": 1572.51,
+      "change_since_last_observation_pct": 2.632316885062713,
       "change_label": "Since last completed daily observation (not 24h change)",
       "rsi_14": 26.00931590746754,
       "sma_50": 2265.8678161334005,
@@ -5992,6 +6030,44 @@
           "level": "Extreme"
         }
       ],
+      "buying_opportunity": {
+        "score": 55,
+        "label": "Potential Accumulation",
+        "factors": [
+          {
+            "name": "Price vs SMA200",
+            "points": 18,
+            "max": 25,
+            "detail": "+18.7% below the 200-day average (negative means above)."
+          },
+          {
+            "name": "Selling exhaustion (RSI)",
+            "points": 16,
+            "max": 20,
+            "detail": "RSI 26.0; oversold can remain oversold."
+          },
+          {
+            "name": "Recovery confirmation",
+            "points": 10,
+            "max": 25,
+            "detail": "MACD histogram -25.9581; improving: yes; above SMA50: no."
+          },
+          {
+            "name": "Completed 7-day trend",
+            "points": 4,
+            "max": 20,
+            "detail": "-4.8% across seven completed daily intervals."
+          },
+          {
+            "name": "Volatility",
+            "points": 7,
+            "max": 10,
+            "detail": "64.3% annualized 30-day volatility."
+          }
+        ],
+        "confirmation_cap_applied": false,
+        "note": "Independent, unvalidated heuristic; not a return probability. A high opportunity score can coexist with high position risk."
+      },
       "opportunity": {
         "signal": "Consider Reducing",
         "agreement": "3 of 6 constructive conditions",
@@ -6008,7 +6084,7 @@
     {
       "symbol": "AVAX",
       "price_usd": 6.72,
-      "price_eur": 6.11,
+      "price_eur": 6.12,
       "change_since_last_observation_pct": 2.230743543147806,
       "change_label": "Since last completed daily observation (not 24h change)",
       "rsi_14": 29.950190631927597,
@@ -8993,6 +9069,44 @@
           "level": "Extreme"
         }
       ],
+      "buying_opportunity": {
+        "score": 47,
+        "label": "Wait",
+        "factors": [
+          {
+            "name": "Price vs SMA200",
+            "points": 18,
+            "max": 25,
+            "detail": "+16.1% below the 200-day average (negative means above)."
+          },
+          {
+            "name": "Selling exhaustion (RSI)",
+            "points": 16,
+            "max": 20,
+            "detail": "RSI 30.0; oversold can remain oversold."
+          },
+          {
+            "name": "Recovery confirmation",
+            "points": 10,
+            "max": 25,
+            "detail": "MACD histogram -0.1043; improving: yes; above SMA50: no."
+          },
+          {
+            "name": "Completed 7-day trend",
+            "points": 0,
+            "max": 20,
+            "detail": "-7.4% across seven completed daily intervals."
+          },
+          {
+            "name": "Volatility",
+            "points": 3,
+            "max": 10,
+            "detail": "80.8% annualized 30-day volatility."
+          }
+        ],
+        "confirmation_cap_applied": false,
+        "note": "Independent, unvalidated heuristic; not a return probability. A high opportunity score can coexist with high position risk."
+      },
       "opportunity": {
         "signal": "Consider Reducing",
         "agreement": "1 of 6 constructive conditions",
@@ -9007,7 +9121,8 @@
       }
     }
   ],
-  "analysis": "# Market Overview\n\nAs of the latest completed daily observation (2026-11-22), the major cryptocurrencies BTC, ETH, and AVAX are trading well below their 50-day and 200-day moving averages. Prices have shown modest gains since the last observation, with BTC up about 2.19%, ETH up 2.28%, and AVAX up 2.23%. However, technical momentum indicators such as the MACD histogram remain negative, though slightly improving, signaling that these moves are more likely oversold bounces rather than confirmed recoveries.\n\nTrading volumes for BTC and ETH have increased significantly, suggesting heightened activity, while AVAX\u2019s volume is somewhat below its recent average. Relative Strength Index (RSI) values for all three remain in low to extreme oversold zones (around 22.6 for BTC, 26.0 for ETH, and 30.0 for AVAX), indicating potential for short-term rebounds but not a definitive trend reversal.\n\n# ETH and AVAX\n\nETH is trading at approximately $1,721 (1,564 EUR) which is below both its 50-day ($2,266) and 200-day ($2,126) simple moving averages. AVAX shows similar weakness at $6.72 (6.11 EUR), also well below its recent averages. Both show negative MACD histograms, with readings suggesting bearish momentum but with slight short-term improvement.\n\nTheir elevated 30-day annualized volatilities\u201464.3% for ETH and 80.8% for AVAX\u2014reflect considerable price fluctuations, increasing the potential risk of sudden moves. Volumes are elevated for ETH (about 1.49 times its 20-day average) but subdued for AVAX (0.84 times), which affects the reliability of price signals.\n\n# Risk Watch\n\nAll three assets carry an **Extreme risk** level, with a composite risk score of 75 for BTC and ETH, and a higher score of 80 for AVAX. This score incorporates key technical risk factors:\n\n- Price below 50-day and 200-day moving averages (+45 combined risk points)\n- Negative MACD histogram (+15)\n- RSI in extreme/oversold zone (+10)\n- Elevated annualized 30-day volatility (\u226540%) (+5 for BTC/ETH; +10 for AVAX)\n\nThis scoring reflects current bearish pressures and market uncertainty. It is important to note this is a technical, market-only measure and does not consider individual holdings, entry prices, tax implications, or investment timeframes.\n\n# What to Monitor\n\n- **Moving averages:** Watch if prices break back above the 50-day and 200-day averages, indicating a potential shift in trend.\n- **MACD histogram:** Continued improvement from negative territory could signal waning bearish momentum.\n- **RSI behavior:** Monitor for sustained moves out of the oversold range, which may support more confident recovery claims.\n- **Volume trends:** Rising volume with upward price movements can validate strength; conversely, declining volume warns of fragile gains.\n- **Volatility:** High annualized volatility suggests risk of sharp price swings and advises caution.\n\nCurrently, market conditions suggest caution with the technical outlook remaining bearish despite short-term oversold bounces. The \u201cConsider Reducing\u201d opportunity signals should be viewed strictly as market condition indicators, not personalized advice.",
+  "analysis": "# Market overview\n\nAs of the last completed daily observation (2026-11-22), Bitcoin (BTC) trades at $61,574 (about \u20ac56,061), showing a positive price change of +2.42% since that day. Ethereum (ETH) is at $1,727 (\u20ac1,573), up +2.63%, and Avalanche (AVAX) stands at $6.72 (\u20ac6.12), with a +2.23% increase. Despite these recent gains, all three assets remain well below their respective 50-day and 200-day simple moving averages (SMAs), reflecting ongoing bearish trends.\n\n# ETH and AVAX\n\nETH and AVAX both exhibit low 14-day Relative Strength Index (RSI) values \u2014 26.0 and 30.0 respectively \u2014 indicating they are in oversold territory. This condition suggests potential selling exhaustion but is not a confirmed signal of recovery. Their Moving Average Convergence/Divergence (MACD) histograms are negative but showing signs of improvement, which further points to the possibility of a near-term bounce rather than a sustained uptrend. Volatility remains high, especially for AVAX with an annualized 30-day volatility over 80%, reflecting substantial price fluctuations.\n\nThe buying opportunity scores for ETH (55, labeled \"Potential Accumulation\") and AVAX (47, labeled \"Wait\") reflect these cautious conditions. These labels describe market states and are not personalized recommendations.\n\n# Risk watch\n\nAll three assets carry an \"Extreme\" risk score of 75 or higher, based on several technical factors:\n\n- Prices trading below both their 200-day and 50-day moving averages, contributing +45 points to the risk score.\n- Negative MACD histograms (+15 points).\n- RSI values in extreme low zones (+10 points).\n- Elevated 30-day annualized volatility: 45.5% for BTC, 64.3% for ETH, and 80.8% for AVAX, adding 5 to 10 points each.\n\nThis risk assessment measures position risk related to current price structure and volatility, separate from the independent buying opportunity score. A high opportunity score can coexist with high risk, emphasizing the need for caution.\n\n# What to monitor\n\n- Whether prices can sustain levels above the 50-day and 200-day SMAs, which are currently overhead.\n- Confirmation of MACD histogram trend continuing upward and crossing into positive territory, indicating potential recovery rather than a short-term bounce.\n- RSI movements out of oversold zones as part of sustained recovery confirmation.\n- Changes in daily trading volume relative to the 20-day average; notably, BTC and ETH have increased volumes (1.77\u00d7 and 1.49\u00d7 respectively), whereas AVAX volume remains below average (0.84\u00d7), which can influence price action strength.\n- Ongoing volatility levels which very much affect price risk and trading conditions.\n\nPlease note all indicators are based purely on market data and do not account for individual holdings, entry prices, taxes, or investment time horizons. They aim only to characterize prevailing market conditions.",
+  "buying_opportunity_methodology": "Independent 0\u2013100 heuristic: discount to SMA200 (25), RSI selling exhaustion (20), MACD/SMA50 recovery confirmation (25), seven-completed-day trend (20), annualized 30-day volatility (10). Without positive MACD or improving MACD, score capped at 69. Bands: 0\u201324 Unattractive; 25\u201349 Wait; 50\u201369 Potential Accumulation; 70\u201384 Attractive; 85\u2013100 Strong Opportunity. Unvalidated, not a forecast or trade instruction.",
   "opportunity_methodology": "Rule-based, market-only signal. Constructive conditions: price above both SMAs, positive MACD histogram, improving MACD histogram, RSI 40\u201368, volatility below 65%, and latest completed volume at least its previous 20-day average. Buy Opportunity requires at least 5/6 and risk below 40; Accumulate Cautiously requires at least 4/6, improving MACD and risk below 60. Downside warnings depend on high risk, price below both SMAs and negative MACD. Missing volume cannot qualify for Buy Opportunity. Signals are not trading instructions.",
   "risk_methodology": "Heuristic score 0\u2013100: below SMA200 +25; below SMA50 +20; SMA50 below SMA200 +15; negative MACD histogram +15; RSI <35 or >75 +10; annualized 30d volatility \u226540% +5, \u226565% +10, \u2265100% +15. Low <25, Moderate 25\u201349, High 50\u201374, Extreme \u226575. Not a probability or a prediction.",
   "disclaimer": "For information only, not financial advice. Crypto assets are volatile. Risk score is a heuristic, not a guarantee. EUR and USD spot prices are indicative."
