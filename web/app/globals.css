@@ -23,3 +23,18 @@
 .opportunity-badge--warning{background:#4b2731;color:#ffb7b7;border:1px solid #965060}
 .opportunity .opportunity-guidance{margin:0;color:#e0e8f8;font-size:12px;line-height:1.55}
 .opportunity>small{color:#b5c5df;font-size:11px}
+
+/* V2.4: independent buying opportunity assessment */
+.dual-assessment{display:flex;flex-direction:column;gap:12px;margin:14px 0 20px}
+.dual-assessment .opportunity{margin:0}
+.buying-panel{padding:14px;border:1px solid #426c88;border-radius:11px;background:#12283a;color:#e4f3fc}
+.buying-result{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:12px 0}
+.buying-result>strong{font-size:26px;letter-spacing:-.5px}
+.buying-status{display:inline-flex;border-radius:20px;padding:6px 10px;font-size:11px;font-weight:800;background:#30465c;color:#edf6ff}
+.buying-status--strong-opportunity,.buying-status--attractive{background:#164d3c;color:#90f2c5}
+.buying-status--potential-accumulation{background:#51491d;color:#ffe09c}
+.buying-status--unattractive{background:#5b2834;color:#ffb4bd}
+.buying-panel details{font-size:12px;color:#d1e1ef;margin-top:10px}
+.buying-panel summary{cursor:pointer;font-weight:700}
+.buying-panel li{margin:8px 0;line-height:1.5}
+.buying-panel p{font-size:12px;line-height:1.55}

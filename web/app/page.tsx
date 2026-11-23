@@ -6,6 +6,7 @@ import RiskTrends from './risk-trends';
 type Risk = { score: number; level: string; trend: string; factors: string[] };
 type Macd = { line: number; signal: number; histogram: number; previous_histogram: number | null };
 type HistoryPoint = { date: string; price_usd: number; sma_50: number | null; sma_200: number | null; rsi_14: number | null };
+type BuyingOpportunity = { score: number | null; label: string; factors: { name: string; points: number; max: number; detail: string }[]; note: string; confirmation_cap_applied?: boolean };
 type Opportunity = { signal: string; agreement: string; reasons: string[]; note?: string };
 type RiskPoint = { date: string; score: number; level: string };
 type Market = {
@@ -13,13 +14,13 @@ type Market = {
   change_since_last_observation_pct: number;
   rsi_14: number | null; sma_50: number | null; sma_200: number | null;
   macd?: Macd; volatility_30d_annualized_pct?: number;
-  risk?: Risk; opportunity?: Opportunity; risk_history?: RiskPoint[]; volume_last_observation_usd: number | null;
+  risk?: Risk; opportunity?: Opportunity; buying_opportunity?: BuyingOpportunity; risk_history?: RiskPoint[]; volume_last_observation_usd: number | null;
   volume_previous_20_average_usd: number | null;
   last_completed_observation_date_utc?: string;
 };
 type Report = {
   schema_version?: number; generated_at_utc: string; source: string;
-  markets: Market[]; analysis: string; disclaimer: string; risk_methodology?: string; opportunity_methodology?: string;
+  markets: Market[]; analysis: string; disclaimer: string; risk_methodology?: string; opportunity_methodology?: string; buying_opportunity_methodology?: string;
 };
 
 function loadReport(): Report | null {
@@ -68,7 +69,7 @@ export default function Home() {
   const report = loadReport();
   return <main className="shell">
     <header className="top">
-      <div><div className="eyebrow">DAILY MARKET MONITOR · V2.3.1</div><h1>Crypto Market Intelligence</h1><p className="sub">BTC, ETH and AVAX · Independent market analysis · No trading account connection</p></div>
+      <div><div className="eyebrow">DAILY MARKET MONITOR · V2.4</div><h1>Crypto Market Intelligence</h1><p className="sub">BTC, ETH and AVAX · Independent market analysis · No trading account connection</p></div>
       <div className="stamp">{report ? `Updated ${new Date(report.generated_at_utc).toLocaleString('en-GB', { timeZone: 'Europe/Ljubljana', dateStyle: 'medium', timeStyle: 'short' })} (Slovenia)` : 'Awaiting first report'}</div>
     </header>
     {!report ? <section className="panel"><h2>No report yet</h2><p>The dashboard will populate after the first successful GitHub Actions run.</p></section> : <>
@@ -79,13 +80,21 @@ export default function Home() {
           <div className="price">{money(m.price_usd, 'USD')}</div>
           <div className="eur">{m.price_eur != null ? money(m.price_eur, 'EUR') : 'EUR price pending'}</div>
           {m.risk && <div className="riskrow"><span className="riskpill">{m.risk.trend} trend</span><span className="riskpill">Risk: {m.risk.level} ({m.risk.score}/100)</span></div>}
-          {m.opportunity && <div className={`opportunity opportunity--${signalDisplay(m.opportunity.signal).tone}`}>
-            <div className="opportunity-label">MARKET OPPORTUNITY SIGNAL</div>
-            <div className={`opportunity-badge opportunity-badge--${signalDisplay(m.opportunity.signal).tone}`}>{signalDisplay(m.opportunity.signal).label}</div>
-            <p className="opportunity-guidance">{signalDisplay(m.opportunity.signal).interpretation}</p>
-            <small>{m.opportunity.agreement}</small>
-            <details><summary>Why this assessment?</summary><ul>{m.opportunity.reasons.map((reason, i) => <li key={i}>{reason}</li>)}</ul><p>{m.opportunity.note}</p></details>
-          </div>}
+          <div className="dual-assessment">
+            {m.opportunity && <div className={`opportunity opportunity--${signalDisplay(m.opportunity.signal).tone}`}>
+              <div className="opportunity-label">POSITION RISK · HOLDING EXPOSURE</div>
+              <div className={`opportunity-badge opportunity-badge--${signalDisplay(m.opportunity.signal).tone}`}>{signalDisplay(m.opportunity.signal).label}</div>
+              <p className="opportunity-guidance">{signalDisplay(m.opportunity.signal).interpretation}</p>
+              <small>{m.opportunity.agreement}</small>
+              <details><summary>Why this assessment?</summary><ul>{m.opportunity.reasons.map((reason, i) => <li key={i}>{reason}</li>)}</ul><p>{m.opportunity.note}</p></details>
+            </div>}
+            {m.buying_opportunity && <div className="buying-panel">
+              <div className="opportunity-label">BUYING OPPORTUNITY · INDEPENDENT SCORE</div>
+              <div className="buying-result"><strong>{m.buying_opportunity.score == null ? '—' : `${m.buying_opportunity.score}/100`}</strong><span className={`buying-status buying-status--${m.buying_opportunity.label.toLowerCase().replace(/[^a-z]+/g, '-')}`}>{m.buying_opportunity.label}</span></div>
+              <p className="opportunity-guidance">{m.buying_opportunity.label === 'Strong Opportunity' || m.buying_opportunity.label === 'Attractive' ? 'Several entry conditions are constructive; check downside risk before acting.' : m.buying_opportunity.label === 'Potential Accumulation' ? 'Some value or exhaustion evidence exists, but recovery may remain uncertain.' : 'No sufficiently compelling entry setup under these rules.'}</p>
+              <details><summary>How was this score calculated?</summary><ul>{m.buying_opportunity.factors.map((f, i) => <li key={i}><strong>{f.name}: {f.points}/{f.max}</strong> — {f.detail}</li>)}</ul>{m.buying_opportunity.confirmation_cap_applied && <p>Score capped at 69 because momentum confirmation is absent.</p>}<p>{m.buying_opportunity.note}</p></details>
+            </div>}
+          </div>
           <div className="metrics">
             <div><small>RSI (14)</small><b>{readable(m.rsi_14)}</b></div>
             <div><small>SMA 50 (USD)</small><b>{m.sma_50 == null ? '—' : money(m.sma_50, 'USD')}</b></div>
@@ -101,7 +110,7 @@ export default function Home() {
       <RiskTrends markets={report.markets.map(m => ({symbol: m.symbol, history: m.risk_history ?? []}))} />
       <MarketCharts markets={report.markets.map(m => ({ symbol: m.symbol, history: m.history ?? [] }))} />
       <section className="panel analysis"><div className="eyebrow">AI MARKET BRIEFING</div><Briefing content={report.analysis} /></section>
-      <section className="panel"><div className="eyebrow">DATA & METHODOLOGY</div><p>Source: {report.source}. Historical charts show completed UTC daily observations, not live candles; moving averages use USD prices. RSI uses Wilder smoothing; MACD uses EMA (12, 26, 9); moving averages use completed daily USD observations. EUR prices are separate CoinGecko spot quotes.</p>{report.risk_methodology && <p><strong>Risk methodology:</strong> {report.risk_methodology}</p>}{report.opportunity_methodology && <p><strong>Opportunity methodology:</strong> {report.opportunity_methodology}</p>}<p className="disclaimer">{report.disclaimer}</p></section>
+      <section className="panel"><div className="eyebrow">DATA & METHODOLOGY</div><p>Source: {report.source}. Historical charts show completed UTC daily observations, not live candles; moving averages use USD prices. RSI uses Wilder smoothing; MACD uses EMA (12, 26, 9); moving averages use completed daily USD observations. EUR prices are separate CoinGecko spot quotes.</p>{report.risk_methodology && <p><strong>Risk methodology:</strong> {report.risk_methodology}</p>}{report.buying_opportunity_methodology && <p><strong>Buying opportunity methodology:</strong> {report.buying_opportunity_methodology}</p>}{report.opportunity_methodology && <p><strong>Opportunity methodology:</strong> {report.opportunity_methodology}</p>}<p className="disclaimer">{report.disclaimer}</p></section>
     </>}
     <footer>Crypto Market Intelligence · Public read-only dashboard</footer>
   </main>;
