@@ -1,24 +1,24 @@
 {
   "schema_version": 5,
-  "generated_at_utc": "2026-11-25T07:31:03+00:00",
+  "generated_at_utc": "2026-11-26T07:29:48+00:00",
   "source": "CoinGecko Demo API, aggregated market data",
   "markets": [
     {
       "symbol": "BTC",
-      "price_usd": 58985.0,
-      "price_eur": 53927.0,
-      "change_since_last_observation_pct": -3.6626444708056094,
+      "price_usd": 60510.0,
+      "price_eur": 55150.0,
+      "change_since_last_observation_pct": 1.2568491125574122,
       "change_label": "Since last completed daily observation (not 24h change)",
-      "rsi_14": 26.913615677938523,
-      "sma_50": 76183.8436609585,
-      "sma_200": 72240.44519839254,
+      "rsi_14": 24.809676506145507,
+      "sma_50": 75663.60462679471,
+      "sma_200": 72138.25346609176,
       "macd": {
-        "line": -4813.859281345758,
-        "signal": -4271.902970169667,
-        "histogram": -541.9563111760908,
-        "previous_histogram": -764.8666473715375
+        "line": -4807.663464746103,
+        "signal": -4379.05506911317,
+        "histogram": -428.608395632933,
+        "previous_histogram": -541.9563111648022
       },
-      "volatility_30d_annualized_pct": 46.5116834596874,
+      "volatility_30d_annualized_pct": 46.7965830076137,
       "risk": {
         "score": 75,
         "level": "Extreme",
@@ -31,17 +31,10 @@
           "30-day annualized volatility \u226540% (+5)"
         ]
       },
-      "volume_last_observation_usd": 38710699505.70138,
-      "volume_previous_20_average_usd": 34109395577.959816,
-      "last_completed_observation_date_utc": "2026-11-24",
+      "volume_last_observation_usd": 30038925457.02489,
+      "volume_previous_20_average_usd": 34793771235.00633,
+      "last_completed_observation_date_utc": "2026-11-25",
       "history": [
-        {
-          "date": "2025-12-31",
-          "price_usd": 88363.72223634,
-          "sma_50": null,
-          "sma_200": null,
-          "rsi_14": null
-        },
         {
           "date": "2026-01-01",
           "price_usd": 87575.04615968,
@@ -138,833 +131,833 @@
           "price_usd": 95429.15732243,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 72.701
+          "rsi_14": null
         },
         {
           "date": "2026-01-15",
           "price_usd": 96898.76071082,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 75.221
+          "rsi_14": 78.701
         },
         {
           "date": "2026-01-16",
           "price_usd": 95593.30783681,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 69.117
+          "rsi_14": 72.432
         },
         {
           "date": "2026-01-17",
           "price_usd": 95523.18619825,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 68.794
+          "rsi_14": 72.099
         },
         {
           "date": "2026-01-18",
           "price_usd": 94802.88170432,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 65.414
+          "rsi_14": 68.618
         },
         {
           "date": "2026-01-19",
           "price_usd": 93344.21948491,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 59.082
+          "rsi_14": 62.08
         },
         {
           "date": "2026-01-20",
           "price_usd": 92566.01277952,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 55.969
+          "rsi_14": 58.858
         },
         {
           "date": "2026-01-21",
           "price_usd": 88416.88686187,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 42.97
+          "rsi_14": 45.345
         },
         {
           "date": "2026-01-22",
           "price_usd": 89453.9047372,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 46.326
+          "rsi_14": 48.526
         },
         {
           "date": "2026-01-23",
           "price_usd": 89483.65163015,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 46.423
+          "rsi_14": 48.618
         },
         {
           "date": "2026-01-24",
           "price_usd": 89524.84864062,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 46.568
+          "rsi_14": 48.755
         },
         {
           "date": "2026-01-25",
           "price_usd": 89149.9597093,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 45.368
+          "rsi_14": 47.512
         },
         {
           "date": "2026-01-26",
           "price_usd": 86625.3312814,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 38.226
+          "rsi_14": 40.098
         },
         {
           "date": "2026-01-27",
           "price_usd": 88249.90141827,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 44.302
+          "rsi_14": 45.944
         },
         {
           "date": "2026-01-28",
           "price_usd": 89141.65035979,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 47.363
+          "rsi_14": 48.892
         },
         {
           "date": "2026-01-29",
           "price_usd": 89212.20824183,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 47.608
+          "rsi_14": 49.128
         },
         {
           "date": "2026-01-30",
           "price_usd": 84630.42066738,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 35.906
+          "rsi_14": 37.121
         },
         {
           "date": "2026-01-31",
           "price_usd": 84091.63017683,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 34.822
+          "rsi_14": 36.006
         },
         {
           "date": "2026-02-01",
           "price_usd": 78647.0273979,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 26.21
+          "rsi_14": 27.139
         },
         {
           "date": "2026-02-02",
           "price_usd": 76895.58665593,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 24.142
+          "rsi_14": 25.006
         },
         {
           "date": "2026-02-03",
           "price_usd": 78670.58922753,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 30.157
+          "rsi_14": 30.931
         },
         {
           "date": "2026-02-04",
           "price_usd": 75628.04173331,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 26.307
+          "rsi_14": 26.994
         },
         {
           "date": "2026-02-05",
           "price_usd": 73059.17986714,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 23.57
+          "rsi_14": 24.194
         },
         {
           "date": "2026-02-06",
           "price_usd": 62778.21756635,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 16.274
+          "rsi_14": 16.719
         },
         {
           "date": "2026-02-07",
           "price_usd": 70272.52223141,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 32.642
+          "rsi_14": 32.975
         },
         {
           "date": "2026-02-08",
           "price_usd": 69245.78200906,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 31.727
+          "rsi_14": 32.052
         },
         {
           "date": "2026-02-09",
           "price_usd": 70398.08503297,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 33.965
+          "rsi_14": 34.276
         },
         {
           "date": "2026-02-10",
           "price_usd": 70175.14749174,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 33.734
+          "rsi_14": 34.044
         },
         {
           "date": "2026-02-11",
           "price_usd": 68841.87237645,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 32.322
+          "rsi_14": 32.621
         },
         {
           "date": "2026-02-12",
           "price_usd": 67090.57933965,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 30.516
+          "rsi_14": 30.8
         },
         {
           "date": "2026-02-13",
           "price_usd": 66258.52954947,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 29.667
+          "rsi_14": 29.945
         },
         {
           "date": "2026-02-14",
           "price_usd": 68837.5811243,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 35.641
+          "rsi_14": 35.887
         },
         {
           "date": "2026-02-15",
           "price_usd": 69799.55096263,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 37.764
+          "rsi_14": 38.0
         },
         {
           "date": "2026-02-16",
           "price_usd": 68778.8429848,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 36.392
+          "rsi_14": 36.621
         },
         {
           "date": "2026-02-17",
           "price_usd": 68859.77618747,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 36.589
+          "rsi_14": 36.817
         },
         {
           "date": "2026-02-18",
           "price_usd": 67559.29573332,
-          "sma_50": 83479.64805414,
+          "sma_50": null,
           "sma_200": null,
-          "rsi_14": 34.73
+          "rsi_14": 34.949
         },
         {
           "date": "2026-02-19",
           "price_usd": 66426.61953459,
           "sma_50": 83040.9060001,
           "sma_200": null,
-          "rsi_14": 33.151
+          "rsi_14": 33.361
         },
         {
           "date": "2026-02-20",
           "price_usd": 66976.02936411,
           "sma_50": 82628.92566419,
           "sma_200": null,
-          "rsi_14": 34.702
+          "rsi_14": 34.906
         },
         {
           "date": "2026-02-21",
           "price_usd": 68002.94011063,
           "sma_50": 82213.70194159,
           "sma_200": null,
-          "rsi_14": 37.616
+          "rsi_14": 37.808
         },
         {
           "date": "2026-02-22",
           "price_usd": 68026.03124327,
           "sma_50": 81774.64418238,
           "sma_200": null,
-          "rsi_14": 37.683
+          "rsi_14": 37.875
         },
         {
           "date": "2026-02-23",
           "price_usd": 65192.1887012,
           "sma_50": 81266.19981953,
           "sma_200": null,
-          "rsi_14": 32.978
+          "rsi_14": 33.15
         },
         {
           "date": "2026-02-24",
           "price_usd": 64737.90196985,
           "sma_50": 80723.36631441,
           "sma_200": null,
-          "rsi_14": 32.283
+          "rsi_14": 32.451
         },
         {
           "date": "2026-02-25",
           "price_usd": 64073.54894567,
           "sma_50": 80127.23833385,
           "sma_200": null,
-          "rsi_14": 31.244
+          "rsi_14": 31.408
         },
         {
           "date": "2026-02-26",
           "price_usd": 67850.10521283,
           "sma_50": 79611.24779858,
           "sma_200": null,
-          "rsi_14": 42.554
+          "rsi_14": 42.684
         },
         {
           "date": "2026-02-27",
           "price_usd": 67496.8416395,
           "sma_50": 79135.46396849,
           "sma_200": null,
-          "rsi_14": 41.861
+          "rsi_14": 41.989
         },
         {
           "date": "2026-02-28",
           "price_usd": 65891.22197699,
           "sma_50": 78632.73508464,
           "sma_200": null,
-          "rsi_14": 38.767
+          "rsi_14": 38.888
         },
         {
           "date": "2026-03-01",
           "price_usd": 67017.07604772,
           "sma_50": 78162.04233296,
           "sma_200": null,
-          "rsi_14": 42.003
+          "rsi_14": 42.116
         },
         {
           "date": "2026-03-02",
           "price_usd": 65824.42166938,
           "sma_50": 77670.12480731,
           "sma_200": null,
-          "rsi_14": 39.615
+          "rsi_14": 39.722
         },
         {
           "date": "2026-03-03",
           "price_usd": 68815.93633884,
           "sma_50": 77229.31235206,
           "sma_200": null,
-          "rsi_14": 47.655
+          "rsi_14": 47.745
         },
         {
           "date": "2026-03-04",
           "price_usd": 68287.46303403,
           "sma_50": 76771.04906043,
           "sma_200": null,
-          "rsi_14": 46.478
+          "rsi_14": 46.566
         },
         {
           "date": "2026-03-05",
           "price_usd": 72752.30156666,
           "sma_50": 76317.51194532,
           "sma_200": null,
-          "rsi_14": 56.3
+          "rsi_14": 56.369
         },
         {
           "date": "2026-03-06",
           "price_usd": 70868.21819644,
           "sma_50": 75796.90109503,
           "sma_200": null,
-          "rsi_14": 51.966
+          "rsi_14": 52.031
         },
         {
           "date": "2026-03-07",
           "price_usd": 68142.88312388,
           "sma_50": 75247.89260077,
           "sma_200": null,
-          "rsi_14": 46.402
+          "rsi_14": 46.461
         },
         {
           "date": "2026-03-08",
           "price_usd": 67339.67440057,
           "sma_50": 74684.22236482,
           "sma_200": null,
-          "rsi_14": 44.877
+          "rsi_14": 44.934
         },
         {
           "date": "2026-03-09",
           "price_usd": 66042.75107903,
           "sma_50": 74109.01975231,
           "sma_200": null,
-          "rsi_14": 42.451
+          "rsi_14": 42.506
         },
         {
           "date": "2026-03-10",
           "price_usd": 68430.60926017,
           "sma_50": 73610.74754782,
           "sma_200": null,
-          "rsi_14": 48.022
+          "rsi_14": 48.071
         },
         {
           "date": "2026-03-11",
           "price_usd": 69849.20353051,
           "sma_50": 73156.41136284,
           "sma_200": null,
-          "rsi_14": 51.054
+          "rsi_14": 51.099
         },
         {
           "date": "2026-03-12",
           "price_usd": 70028.95987601,
           "sma_50": 72788.65282312,
           "sma_200": null,
-          "rsi_14": 51.441
+          "rsi_14": 51.485
         },
         {
           "date": "2026-03-13",
           "price_usd": 70417.19388568,
           "sma_50": 72407.91860609,
           "sma_200": null,
-          "rsi_14": 52.317
+          "rsi_14": 52.36
         },
         {
           "date": "2026-03-14",
           "price_usd": 70838.93230193,
           "sma_50": 72035.02421953,
           "sma_200": null,
-          "rsi_14": 53.302
+          "rsi_14": 53.344
         },
         {
           "date": "2026-03-15",
           "price_usd": 71149.28238854,
           "sma_50": 71667.51289448,
           "sma_200": null,
-          "rsi_14": 54.054
+          "rsi_14": 54.096
         },
         {
           "date": "2026-03-16",
           "price_usd": 72934.29407187,
           "sma_50": 71343.19958174,
           "sma_200": null,
-          "rsi_14": 58.224
+          "rsi_14": 58.261
         },
         {
           "date": "2026-03-17",
           "price_usd": 74679.3709081,
           "sma_50": 71104.28037427,
           "sma_200": null,
-          "rsi_14": 61.867
+          "rsi_14": 61.9
         },
         {
           "date": "2026-03-18",
           "price_usd": 74004.69080881,
           "sma_50": 70819.37616208,
           "sma_200": null,
-          "rsi_14": 59.699
+          "rsi_14": 59.732
         },
         {
           "date": "2026-03-19",
           "price_usd": 71220.0473026,
           "sma_50": 70460.94410094,
           "sma_200": null,
-          "rsi_14": 51.655
+          "rsi_14": 51.684
         },
         {
           "date": "2026-03-20",
           "price_usd": 69936.19932094,
           "sma_50": 70075.42392252,
           "sma_200": null,
-          "rsi_14": 48.416
+          "rsi_14": 48.443
         },
         {
           "date": "2026-03-21",
           "price_usd": 70526.28915958,
           "sma_50": 69793.34129236,
           "sma_200": null,
-          "rsi_14": 49.969
+          "rsi_14": 49.995
         },
         {
           "date": "2026-03-22",
           "price_usd": 68424.07687772,
           "sma_50": 69479.99022638,
           "sma_200": null,
-          "rsi_14": 44.795
+          "rsi_14": 44.819
         },
         {
           "date": "2026-03-23",
           "price_usd": 67933.42948138,
           "sma_50": 69265.71826805,
           "sma_200": null,
-          "rsi_14": 43.659
+          "rsi_14": 43.683
         },
         {
           "date": "2026-03-24",
           "price_usd": 70987.25185406,
           "sma_50": 69147.55157201,
           "sma_200": null,
-          "rsi_14": 51.846
+          "rsi_14": 51.865
         },
         {
           "date": "2026-03-25",
           "price_usd": 70528.86345596,
           "sma_50": 68984.71705658,
           "sma_200": null,
-          "rsi_14": 50.656
+          "rsi_14": 50.675
         },
         {
           "date": "2026-03-26",
           "price_usd": 71303.58545062,
           "sma_50": 68898.22793093,
           "sma_200": null,
-          "rsi_14": 52.634
+          "rsi_14": 52.653
         },
         {
           "date": "2026-03-27",
           "price_usd": 68727.21229012,
           "sma_50": 68811.58857939,
           "sma_200": null,
-          "rsi_14": 46.025
+          "rsi_14": 46.042
         },
         {
           "date": "2026-03-28",
           "price_usd": 66329.88185741,
           "sma_50": 68882.62186521,
           "sma_200": null,
-          "rsi_14": 40.881
+          "rsi_14": 40.896
         },
         {
           "date": "2026-03-29",
           "price_usd": 66388.84446013,
           "sma_50": 68804.94830978,
           "sma_200": null,
-          "rsi_14": 41.055
+          "rsi_14": 41.07
         },
         {
           "date": "2026-03-30",
           "price_usd": 65947.03192608,
           "sma_50": 68738.97330812,
           "sma_200": null,
-          "rsi_14": 40.1
+          "rsi_14": 40.115
         },
         {
           "date": "2026-03-31",
           "price_usd": 66691.27147787,
           "sma_50": 68664.83703702,
           "sma_200": null,
-          "rsi_14": 42.526
+          "rsi_14": 42.54
         },
         {
           "date": "2026-04-01",
           "price_usd": 68107.47456405,
           "sma_50": 68623.48357847,
           "sma_200": null,
-          "rsi_14": 46.93
+          "rsi_14": 46.943
         },
         {
           "date": "2026-04-02",
           "price_usd": 67959.87524726,
           "sma_50": 68605.84363588,
           "sma_200": null,
-          "rsi_14": 46.53
+          "rsi_14": 46.542
         },
         {
           "date": "2026-04-03",
           "price_usd": 66887.51063938,
           "sma_50": 68601.78226188,
           "sma_200": null,
-          "rsi_14": 43.619
+          "rsi_14": 43.631
         },
         {
           "date": "2026-04-04",
           "price_usd": 66822.55230312,
           "sma_50": 68613.06271695,
           "sma_200": null,
-          "rsi_14": 43.442
+          "rsi_14": 43.454
         },
         {
           "date": "2026-04-05",
           "price_usd": 67077.15005328,
           "sma_50": 68577.85409553,
           "sma_200": null,
-          "rsi_14": 44.396
+          "rsi_14": 44.408
         },
         {
           "date": "2026-04-06",
           "price_usd": 69002.03847938,
           "sma_50": 68561.90384587,
           "sma_200": null,
-          "rsi_14": 51.108
+          "rsi_14": 51.118
         },
         {
           "date": "2026-04-07",
           "price_usd": 68672.24657456,
           "sma_50": 68559.77191766,
           "sma_200": null,
-          "rsi_14": 49.995
+          "rsi_14": 50.005
         },
         {
           "date": "2026-04-08",
           "price_usd": 71661.76372428,
           "sma_50": 68615.8116684,
           "sma_200": null,
-          "rsi_14": 58.766
+          "rsi_14": 58.773
         },
         {
           "date": "2026-04-09",
           "price_usd": 70644.79416157,
           "sma_50": 68677.52163696,
           "sma_200": null,
-          "rsi_14": 55.218
+          "rsi_14": 55.225
         },
         {
           "date": "2026-04-10",
           "price_usd": 71367.80291659,
           "sma_50": 68776.3453046,
           "sma_200": null,
-          "rsi_14": 57.196
+          "rsi_14": 57.203
         },
         {
           "date": "2026-04-11",
           "price_usd": 72920.25491187,
           "sma_50": 68895.22981556,
           "sma_200": null,
-          "rsi_14": 61.164
+          "rsi_14": 61.17
         },
         {
           "date": "2026-04-12",
           "price_usd": 73021.85968305,
           "sma_50": 68995.60820701,
           "sma_200": null,
-          "rsi_14": 61.416
+          "rsi_14": 61.422
         },
         {
           "date": "2026-04-13",
           "price_usd": 70660.6396118,
           "sma_50": 69048.30037438,
           "sma_200": null,
-          "rsi_14": 52.833
+          "rsi_14": 52.839
         },
         {
           "date": "2026-04-14",
           "price_usd": 74481.6414286,
           "sma_50": 69234.08942893,
           "sma_200": null,
-          "rsi_14": 62.071
+          "rsi_14": 62.075
         },
         {
           "date": "2026-04-15",
           "price_usd": 74297.347595,
           "sma_50": 69425.27834143,
           "sma_200": null,
-          "rsi_14": 61.446
+          "rsi_14": 61.45
         },
         {
           "date": "2026-04-16",
           "price_usd": 74826.31308826,
           "sma_50": 69640.33362428,
           "sma_200": null,
-          "rsi_14": 62.61
+          "rsi_14": 62.614
         },
         {
           "date": "2026-04-17",
           "price_usd": 75111.95674548,
           "sma_50": 69785.57065493,
           "sma_200": null,
-          "rsi_14": 63.255
+          "rsi_14": 63.259
         },
         {
           "date": "2026-04-18",
           "price_usd": 77125.73357198,
           "sma_50": 69978.14849358,
           "sma_200": null,
-          "rsi_14": 67.51
+          "rsi_14": 67.514
         },
         {
           "date": "2026-04-19",
           "price_usd": 75716.15083727,
           "sma_50": 70174.64707079,
           "sma_200": null,
-          "rsi_14": 62.09
+          "rsi_14": 62.093
         },
         {
           "date": "2026-04-20",
           "price_usd": 73841.02173809,
           "sma_50": 70311.1259846,
           "sma_200": null,
-          "rsi_14": 55.684
+          "rsi_14": 55.687
         },
         {
           "date": "2026-04-21",
           "price_usd": 75858.03546791,
           "sma_50": 70511.79826057,
           "sma_200": null,
-          "rsi_14": 60.415
+          "rsi_14": 60.418
         },
         {
           "date": "2026-04-22",
           "price_usd": 76326.19170243,
           "sma_50": 70662.00336784,
           "sma_200": null,
-          "rsi_14": 61.444
+          "rsi_14": 61.446
         },
         {
           "date": "2026-04-23",
           "price_usd": 78238.81675009,
           "sma_50": 70861.03044216,
           "sma_200": null,
-          "rsi_14": 65.4
+          "rsi_14": 65.402
         },
         {
           "date": "2026-04-24",
           "price_usd": 78275.32582746,
           "sma_50": 70971.49092738,
           "sma_200": null,
-          "rsi_14": 65.473
+          "rsi_14": 65.475
         },
         {
           "date": "2026-04-25",
           "price_usd": 77447.61757992,
           "sma_50": 71103.07891504,
           "sma_200": null,
-          "rsi_14": 62.273
+          "rsi_14": 62.275
         },
         {
           "date": "2026-04-26",
           "price_usd": 77634.51592193,
           "sma_50": 71292.91157101,
           "sma_200": null,
-          "rsi_14": 62.716
+          "rsi_14": 62.718
         },
         {
           "date": "2026-04-27",
           "price_usd": 78637.7435615,
           "sma_50": 71518.87295422,
           "sma_200": null,
-          "rsi_14": 65.086
+          "rsi_14": 65.088
         },
         {
           "date": "2026-04-28",
           "price_usd": 77366.78442217,
           "sma_50": 71745.35362109,
           "sma_200": null,
-          "rsi_14": 59.891
+          "rsi_14": 59.893
         },
         {
           "date": "2026-04-29",
           "price_usd": 76331.8644347,
           "sma_50": 71903.37872458,
           "sma_200": null,
-          "rsi_14": 55.973
+          "rsi_14": 55.974
         },
         {
           "date": "2026-04-30",
           "price_usd": 75784.95743625,
           "sma_50": 72022.09380269,
           "sma_200": null,
-          "rsi_14": 53.964
+          "rsi_14": 53.965
         },
         {
           "date": "2026-05-01",
           "price_usd": 76296.79648443,
           "sma_50": 72147.45053486,
           "sma_200": null,
-          "rsi_14": 55.571
+          "rsi_14": 55.573
         },
         {
           "date": "2026-05-02",
           "price_usd": 78207.7642549,
           "sma_50": 72303.26194225,
           "sma_200": null,
-          "rsi_14": 61.04
+          "rsi_14": 61.042
         },
         {
           "date": "2026-05-03",
           "price_usd": 78677.42463272,
           "sma_50": 72460.03178886,
           "sma_200": null,
-          "rsi_14": 62.269
+          "rsi_14": 62.271
         },
         {
           "date": "2026-05-04",
           "price_usd": 78512.09246456,
           "sma_50": 72607.28799038,
           "sma_200": null,
-          "rsi_14": 61.533
+          "rsi_14": 61.535
         },
         {
           "date": "2026-05-05",
           "price_usd": 79825.87511296,
           "sma_50": 72745.1196112,
           "sma_200": null,
-          "rsi_14": 65.067
+          "rsi_14": 65.068
         },
         {
           "date": "2026-05-06",
           "price_usd": 80913.96137493,
           "sma_50": 72869.81142054,
           "sma_200": null,
-          "rsi_14": 67.713
+          "rsi_14": 67.714
         },
         {
           "date": "2026-05-07",
           "price_usd": 81436.85936825,
           "sma_50": 73018.45479173,
           "sma_200": null,
-          "rsi_14": 68.93
+          "rsi_14": 68.931
         },
         {
           "date": "2026-05-08",
           "price_usd": 80024.90767231,
           "sma_50": 73194.55199912,
           "sma_200": null,
-          "rsi_14": 62.118
+          "rsi_14": 62.119
         },
         {
           "date": "2026-05-09",
           "price_usd": 80197.2669977,
           "sma_50": 73399.77335266,
           "sma_200": null,
-          "rsi_14": 62.604
+          "rsi_14": 62.605
         },
         {
           "date": "2026-05-10",
           "price_usd": 80677.64981724,
           "sma_50": 73602.80056581,
           "sma_200": null,
-          "rsi_14": 63.99
+          "rsi_14": 63.991
         },
         {
           "date": "2026-05-11",
           "price_usd": 82018.37112439,
           "sma_50": 73874.68645075,
           "sma_200": null,
-          "rsi_14": 67.6
+          "rsi_14": 67.601
         },
         {
           "date": "2026-05-12",
           "price_usd": 81627.56604995,
           "sma_50": 74148.56918212,
           "sma_200": null,
-          "rsi_14": 65.537
+          "rsi_14": 65.538
         },
         {
           "date": "2026-05-13",
@@ -992,14 +985,14 @@
           "price_usd": 79068.66840414,
           "sma_50": 74915.60632556,
           "sma_200": null,
-          "rsi_14": 52.207
+          "rsi_14": 52.208
         },
         {
           "date": "2026-05-17",
           "price_usd": 78132.75351269,
           "sma_50": 75151.66375867,
           "sma_200": null,
-          "rsi_14": 48.941
+          "rsi_14": 48.942
         },
         {
           "date": "2026-05-18",
@@ -1020,7 +1013,7 @@
           "price_usd": 76758.73155866,
           "sma_50": 75794.05392008,
           "sma_200": null,
-          "rsi_14": 44.338
+          "rsi_14": 44.339
         },
         {
           "date": "2026-05-21",
@@ -1069,7 +1062,7 @@
           "price_usd": 75851.10409562,
           "sma_50": 77049.65900485,
           "sma_200": null,
-          "rsi_14": 42.773
+          "rsi_14": 42.774
         },
         {
           "date": "2026-05-28",
@@ -1097,14 +1090,14 @@
           "price_usd": 73820.30385315,
           "sma_50": 77224.01625912,
           "sma_200": null,
-          "rsi_14": 37.27
+          "rsi_14": 37.271
         },
         {
           "date": "2026-06-01",
           "price_usd": 73598.66812382,
           "sma_50": 77235.55242793,
           "sma_200": null,
-          "rsi_14": 36.53
+          "rsi_14": 36.531
         },
         {
           "date": "2026-06-02",
@@ -1432,7 +1425,7 @@
           "date": "2026-07-18",
           "price_usd": 63904.95401494,
           "sma_50": 63717.68299209,
-          "sma_200": 73259.55143007,
+          "sma_200": null,
           "rsi_14": 51.743
         },
         {
@@ -2337,14 +2330,16 @@
           "sma_50": 76183.84366096,
           "sma_200": 72240.44519839,
           "rsi_14": 26.914
+        },
+        {
+          "date": "2026-11-25",
+          "price_usd": 59758.92053755,
+          "sma_50": 75663.60462679,
+          "sma_200": 72138.25346609,
+          "rsi_14": 24.81
         }
       ],
       "risk_history": [
-        {
-          "date": "2026-07-18",
-          "score": 40,
-          "level": "Moderate"
-        },
         {
           "date": "2026-07-19",
           "score": 40,
@@ -2989,6 +2984,11 @@
           "date": "2026-11-24",
           "score": 75,
           "level": "Extreme"
+        },
+        {
+          "date": "2026-11-25",
+          "score": 75,
+          "level": "Extreme"
         }
       ],
       "buying_opportunity": {
@@ -2999,31 +2999,31 @@
             "name": "Price vs SMA200",
             "points": 18,
             "max": 25,
-            "detail": "+18.3% below the 200-day average (negative means above)."
+            "detail": "+16.1% below the 200-day average (negative means above)."
           },
           {
             "name": "Selling exhaustion (RSI)",
-            "points": 16,
+            "points": 20,
             "max": 20,
-            "detail": "RSI 26.9; oversold can remain oversold."
+            "detail": "RSI 24.8; oversold can remain oversold."
           },
           {
             "name": "Recovery confirmation",
             "points": 10,
             "max": 25,
-            "detail": "MACD histogram -541.9563; improving: yes; above SMA50: no."
+            "detail": "MACD histogram -428.6084; improving: yes; above SMA50: no."
           },
           {
             "name": "Completed 7-day trend",
-            "points": 4,
+            "points": 0,
             "max": 20,
-            "detail": "-5.6% across seven completed daily intervals."
+            "detail": "-7.9% across seven completed daily intervals."
           },
           {
             "name": "Volatility",
             "points": 7,
             "max": 10,
-            "detail": "46.5% annualized 30-day volatility."
+            "detail": "46.8% annualized 30-day volatility."
           }
         ],
         "confirmation_cap_applied": false,
@@ -3031,33 +3031,33 @@
       },
       "opportunity": {
         "signal": "Consider Reducing",
-        "agreement": "3 of 6 constructive conditions",
+        "agreement": "2 of 6 constructive conditions",
         "reasons": [
           "Price is not above both moving averages.",
           "MACD histogram is negative and improving.",
-          "RSI is 26.9; an oversold reading alone is not a buy signal.",
-          "Annualized 30-day volatility is 46.5%.",
-          "Latest completed daily volume is 1.13\u00d7 its previous 20-observation average."
+          "RSI is 24.8; an oversold reading alone is not a buy signal.",
+          "Annualized 30-day volatility is 46.8%.",
+          "Latest completed daily volume is 0.86\u00d7 its previous 20-observation average."
         ],
         "note": "Market-only indicator. It does not account for holdings, entry price, taxes or time horizon."
       }
     },
     {
       "symbol": "ETH",
-      "price_usd": 1653.78,
-      "price_eur": 1512.41,
-      "change_since_last_observation_pct": -3.249039058187664,
+      "price_usd": 1688.74,
+      "price_eur": 1539.15,
+      "change_since_last_observation_pct": 0.6429010806638935,
       "change_label": "Since last completed daily observation (not 24h change)",
-      "rsi_14": 29.334920336031956,
-      "sma_50": 2226.2304371717405,
-      "sma_200": 2119.596599564786,
+      "rsi_14": 27.993127384562,
+      "sma_50": 2205.5811221676904,
+      "sma_200": 2116.449009828484,
       "macd": {
-        "line": -165.09677051212384,
-        "signal": -153.29785345316992,
-        "histogram": -11.798917058953919,
-        "previous_histogram": -18.200846191549573
+        "line": -163.0125767899808,
+        "signal": -155.24079812218588,
+        "histogram": -7.771778667794933,
+        "previous_histogram": -11.798917058292318
       },
-      "volatility_30d_annualized_pct": 65.26357453633544,
+      "volatility_30d_annualized_pct": 65.3157241913912,
       "risk": {
         "score": 80,
         "level": "Extreme",
@@ -3070,17 +3070,10 @@
           "30-day annualized volatility \u226565% (+10)"
         ]
       },
-      "volume_last_observation_usd": 14663914270.8876,
-      "volume_previous_20_average_usd": 12543904483.97235,
-      "last_completed_observation_date_utc": "2026-11-24",
+      "volume_last_observation_usd": 10610516340.07155,
+      "volume_previous_20_average_usd": 12870392449.855904,
+      "last_completed_observation_date_utc": "2026-11-25",
       "history": [
-        {
-          "date": "2025-12-31",
-          "price_usd": 2967.98041379,
-          "sma_50": null,
-          "sma_200": null,
-          "rsi_14": null
-        },
         {
           "date": "2026-01-01",
           "price_usd": 2970.02868236,
@@ -3177,658 +3170,658 @@
           "price_usd": 3330.50442936,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 71.981
+          "rsi_14": null
         },
         {
           "date": "2026-01-15",
           "price_usd": 3351.81608164,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 72.739
+          "rsi_14": 72.62
         },
         {
           "date": "2026-01-16",
           "price_usd": 3319.22316589,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 69.634
+          "rsi_14": 69.721
         },
         {
           "date": "2026-01-17",
           "price_usd": 3293.5747666,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 67.203
+          "rsi_14": 67.438
         },
         {
           "date": "2026-01-18",
           "price_usd": 3307.0701204,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 67.839
+          "rsi_14": 68.031
         },
         {
           "date": "2026-01-19",
           "price_usd": 3265.36371567,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 63.724
+          "rsi_14": 64.144
         },
         {
           "date": "2026-01-20",
           "price_usd": 3186.78073969,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 56.741
+          "rsi_14": 57.479
         },
         {
           "date": "2026-01-21",
           "price_usd": 2941.88325567,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 41.483
+          "rsi_14": 42.618
         },
         {
           "date": "2026-01-22",
           "price_usd": 2984.17496554,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 44.27
+          "rsi_14": 45.25
         },
         {
           "date": "2026-01-23",
           "price_usd": 2950.49370021,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 42.533
+          "rsi_14": 43.537
         },
         {
           "date": "2026-01-24",
           "price_usd": 2955.12255502,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 42.865
+          "rsi_14": 43.852
         },
         {
           "date": "2026-01-25",
           "price_usd": 2950.84430991,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 42.62
+          "rsi_14": 43.61
         },
         {
           "date": "2026-01-26",
           "price_usd": 2812.93540389,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 35.564
+          "rsi_14": 36.602
         },
         {
           "date": "2026-01-27",
           "price_usd": 2925.76383302,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 43.766
+          "rsi_14": 44.465
         },
         {
           "date": "2026-01-28",
           "price_usd": 3020.01573109,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 49.544
+          "rsi_14": 50.039
         },
         {
           "date": "2026-01-29",
           "price_usd": 3007.54979052,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 48.83
+          "rsi_14": 49.334
         },
         {
           "date": "2026-01-30",
           "price_usd": 2822.6338414,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 39.685
+          "rsi_14": 40.267
         },
         {
           "date": "2026-01-31",
           "price_usd": 2702.9166773,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 35.102
+          "rsi_14": 35.693
         },
         {
           "date": "2026-02-01",
           "price_usd": 2450.66354689,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 27.813
+          "rsi_14": 28.379
         },
         {
           "date": "2026-02-02",
           "price_usd": 2264.34538769,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 23.87
+          "rsi_14": 24.401
         },
         {
           "date": "2026-02-03",
           "price_usd": 2343.45854365,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 28.505
+          "rsi_14": 28.955
         },
         {
           "date": "2026-02-04",
           "price_usd": 2226.41311846,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 25.985
+          "rsi_14": 26.419
         },
         {
           "date": "2026-02-05",
           "price_usd": 2143.29339866,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 24.339
+          "rsi_14": 24.761
         },
         {
           "date": "2026-02-06",
           "price_usd": 1823.80533142,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 19.283
+          "rsi_14": 19.655
         },
         {
           "date": "2026-02-07",
           "price_usd": 2055.77437923,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 30.561
+          "rsi_14": 30.811
         },
         {
           "date": "2026-02-08",
           "price_usd": 2087.98662735,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 31.982
+          "rsi_14": 32.219
         },
         {
           "date": "2026-02-09",
           "price_usd": 2092.42745882,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 32.189
+          "rsi_14": 32.423
         },
         {
           "date": "2026-02-10",
           "price_usd": 2106.78564426,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 32.896
+          "rsi_14": 33.124
         },
         {
           "date": "2026-02-11",
           "price_usd": 2021.44159077,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 30.836
+          "rsi_14": 31.061
         },
         {
           "date": "2026-02-12",
           "price_usd": 1944.68190065,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 29.072
+          "rsi_14": 29.294
         },
         {
           "date": "2026-02-13",
           "price_usd": 1947.8399218,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 29.252
+          "rsi_14": 29.472
         },
         {
           "date": "2026-02-14",
           "price_usd": 2048.31878779,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 34.891
+          "rsi_14": 35.066
         },
         {
           "date": "2026-02-15",
           "price_usd": 2085.70559157,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 36.906
+          "rsi_14": 37.066
         },
         {
           "date": "2026-02-16",
           "price_usd": 1967.54992174,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 33.389
+          "rsi_14": 33.549
         },
         {
           "date": "2026-02-17",
           "price_usd": 1998.17598711,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 35.115
+          "rsi_14": 35.264
         },
         {
           "date": "2026-02-18",
           "price_usd": 1994.35271169,
-          "sma_50": 2725.01123654,
+          "sma_50": null,
           "sma_200": null,
-          "rsi_14": 34.993
+          "rsi_14": 35.142
         },
         {
           "date": "2026-02-19",
           "price_usd": 1954.65311492,
           "sma_50": 2704.74469056,
           "sma_200": null,
-          "rsi_14": 33.685
+          "rsi_14": 33.834
         },
         {
           "date": "2026-02-20",
           "price_usd": 1949.60683691,
           "sma_50": 2684.33625365,
           "sma_200": null,
-          "rsi_14": 33.514
+          "rsi_14": 33.662
         },
         {
           "date": "2026-02-21",
           "price_usd": 1967.92838032,
           "sma_50": 2663.61772509,
           "sma_200": null,
-          "rsi_14": 34.811
+          "rsi_14": 34.952
         },
         {
           "date": "2026-02-22",
           "price_usd": 1973.86609038,
           "sma_50": 2640.55503423,
           "sma_200": null,
-          "rsi_14": 35.252
+          "rsi_14": 35.39
         },
         {
           "date": "2026-02-23",
           "price_usd": 1873.2479062,
           "sma_50": 2615.49490254,
           "sma_200": null,
-          "rsi_14": 31.379
+          "rsi_14": 31.515
         },
         {
           "date": "2026-02-24",
           "price_usd": 1859.21991068,
           "sma_50": 2589.61723284,
           "sma_200": null,
-          "rsi_14": 30.87
+          "rsi_14": 31.005
         },
         {
           "date": "2026-02-25",
           "price_usd": 1852.08216189,
           "sma_50": 2562.11100969,
           "sma_200": null,
-          "rsi_14": 30.597
+          "rsi_14": 30.733
         },
         {
           "date": "2026-02-26",
           "price_usd": 2053.09773253,
           "sma_50": 2537.33470511,
           "sma_200": null,
-          "rsi_14": 45.237
+          "rsi_14": 45.305
         },
         {
           "date": "2026-02-27",
           "price_usd": 2027.50507591,
           "sma_50": 2514.55331957,
           "sma_200": null,
-          "rsi_14": 43.966
+          "rsi_14": 44.035
         },
         {
           "date": "2026-02-28",
           "price_usd": 1931.11885266,
           "sma_50": 2491.05451407,
           "sma_200": null,
-          "rsi_14": 39.466
+          "rsi_14": 39.539
         },
         {
           "date": "2026-03-01",
           "price_usd": 1966.72191636,
           "sma_50": 2468.680747,
           "sma_200": null,
-          "rsi_14": 41.834
+          "rsi_14": 41.899
         },
         {
           "date": "2026-03-02",
           "price_usd": 1939.79571939,
           "sma_50": 2445.75416733,
           "sma_200": null,
-          "rsi_14": 40.542
+          "rsi_14": 40.608
         },
         {
           "date": "2026-03-03",
           "price_usd": 2028.79901135,
           "sma_50": 2424.02028754,
           "sma_200": null,
-          "rsi_14": 46.43
+          "rsi_14": 46.478
         },
         {
           "date": "2026-03-04",
           "price_usd": 1982.95141328,
           "sma_50": 2401.8456211,
           "sma_200": null,
-          "rsi_14": 44.013
+          "rsi_14": 44.062
         },
         {
           "date": "2026-03-05",
           "price_usd": 2127.57917781,
           "sma_50": 2377.78711607,
           "sma_200": null,
-          "rsi_14": 52.428
+          "rsi_14": 52.457
         },
         {
           "date": "2026-03-06",
           "price_usd": 2073.35894718,
           "sma_50": 2352.21797338,
           "sma_200": null,
-          "rsi_14": 49.429
+          "rsi_14": 49.46
         },
         {
           "date": "2026-03-07",
           "price_usd": 1979.07813258,
           "sma_50": 2325.41507272,
           "sma_200": null,
-          "rsi_14": 44.645
+          "rsi_14": 44.68
         },
         {
           "date": "2026-03-08",
           "price_usd": 1971.24296986,
           "sma_50": 2298.96843678,
           "sma_200": null,
-          "rsi_14": 44.262
+          "rsi_14": 44.297
         },
         {
           "date": "2026-03-09",
           "price_usd": 1939.39175939,
           "sma_50": 2271.61486956,
           "sma_200": null,
-          "rsi_14": 42.658
+          "rsi_14": 42.694
         },
         {
           "date": "2026-03-10",
           "price_usd": 1992.98202691,
           "sma_50": 2246.16723579,
           "sma_200": null,
-          "rsi_14": 46.191
+          "rsi_14": 46.22
         },
         {
           "date": "2026-03-11",
           "price_usd": 2035.1741536,
           "sma_50": 2223.13510406,
           "sma_200": null,
-          "rsi_14": 48.862
+          "rsi_14": 48.887
         },
         {
           "date": "2026-03-12",
           "price_usd": 2051.93411412,
           "sma_50": 2205.33612123,
           "sma_200": null,
-          "rsi_14": 49.925
+          "rsi_14": 49.948
         },
         {
           "date": "2026-03-13",
           "price_usd": 2071.91973079,
           "sma_50": 2187.09101654,
           "sma_200": null,
-          "rsi_14": 51.227
+          "rsi_14": 51.248
         },
         {
           "date": "2026-03-14",
           "price_usd": 2090.07300643,
           "sma_50": 2169.88260266,
           "sma_200": null,
-          "rsi_14": 52.437
+          "rsi_14": 52.457
         },
         {
           "date": "2026-03-15",
           "price_usd": 2094.98030986,
           "sma_50": 2152.67975776,
           "sma_200": null,
-          "rsi_14": 52.778
+          "rsi_14": 52.797
         },
         {
           "date": "2026-03-16",
           "price_usd": 2182.07265761,
           "sma_50": 2137.30432471,
           "sma_200": null,
-          "rsi_14": 58.47
+          "rsi_14": 58.481
         },
         {
           "date": "2026-03-17",
           "price_usd": 2343.53108773,
           "sma_50": 2127.91623839,
           "sma_200": null,
-          "rsi_14": 66.525
+          "rsi_14": 66.528
         },
         {
           "date": "2026-03-18",
           "price_usd": 2320.95092675,
           "sma_50": 2115.81998027,
           "sma_200": null,
-          "rsi_14": 64.637
+          "rsi_14": 64.641
         },
         {
           "date": "2026-03-19",
           "price_usd": 2203.13494415,
           "sma_50": 2099.48236453,
           "sma_200": null,
-          "rsi_14": 55.746
+          "rsi_14": 55.756
         },
         {
           "date": "2026-03-20",
           "price_usd": 2139.51419529,
           "sma_50": 2082.12165262,
           "sma_200": null,
-          "rsi_14": 51.617
+          "rsi_14": 51.628
         },
         {
           "date": "2026-03-21",
           "price_usd": 2146.57881498,
           "sma_50": 2068.60055209,
           "sma_200": null,
-          "rsi_14": 52.042
+          "rsi_14": 52.053
         },
         {
           "date": "2026-03-22",
           "price_usd": 2066.15618685,
           "sma_50": 2055.86534229,
           "sma_200": null,
-          "rsi_14": 46.985
+          "rsi_14": 46.997
         },
         {
           "date": "2026-03-23",
           "price_usd": 2055.68183874,
           "sma_50": 2047.96570812,
           "sma_200": null,
-          "rsi_14": 46.353
+          "rsi_14": 46.366
         },
         {
           "date": "2026-03-24",
           "price_usd": 2152.47130239,
           "sma_50": 2045.72822642,
           "sma_200": null,
-          "rsi_14": 52.684
+          "rsi_14": 52.693
         },
         {
           "date": "2026-03-25",
           "price_usd": 2156.39387798,
           "sma_50": 2041.9869331,
           "sma_200": null,
-          "rsi_14": 52.927
+          "rsi_14": 52.935
         },
         {
           "date": "2026-03-26",
           "price_usd": 2168.56055255,
           "sma_50": 2040.82988178,
           "sma_200": null,
-          "rsi_14": 53.719
+          "rsi_14": 53.727
         },
         {
           "date": "2026-03-27",
           "price_usd": 2059.58910436,
           "sma_50": 2039.1557959,
           "sma_200": null,
-          "rsi_14": 46.217
+          "rsi_14": 46.226
         },
         {
           "date": "2026-03-28",
           "price_usd": 1991.54854779,
           "sma_50": 2042.51066023,
           "sma_200": null,
-          "rsi_14": 42.25
+          "rsi_14": 42.259
         },
         {
           "date": "2026-03-29",
           "price_usd": 1994.47452025,
           "sma_50": 2041.28466305,
           "sma_200": null,
-          "rsi_14": 42.478
+          "rsi_14": 42.488
         },
         {
           "date": "2026-03-30",
           "price_usd": 1982.81323521,
           "sma_50": 2039.1811952,
           "sma_200": null,
-          "rsi_14": 41.768
+          "rsi_14": 41.778
         },
         {
           "date": "2026-03-31",
           "price_usd": 2024.01464708,
           "sma_50": 2037.81293897,
           "sma_200": null,
-          "rsi_14": 45.25
+          "rsi_14": 45.258
         },
         {
           "date": "2026-04-01",
           "price_usd": 2095.41599343,
           "sma_50": 2037.58554595,
           "sma_200": null,
-          "rsi_14": 50.745
+          "rsi_14": 50.751
         },
         {
           "date": "2026-04-02",
           "price_usd": 2131.5392771,
           "sma_50": 2039.78749968,
           "sma_200": null,
-          "rsi_14": 53.299
+          "rsi_14": 53.304
         },
         {
           "date": "2026-04-03",
           "price_usd": 2052.33623023,
           "sma_50": 2041.94058627,
           "sma_200": null,
-          "rsi_14": 47.485
+          "rsi_14": 47.491
         },
         {
           "date": "2026-04-04",
           "price_usd": 2052.16368338,
           "sma_50": 2044.0270615,
           "sma_200": null,
-          "rsi_14": 47.473
+          "rsi_14": 47.479
         },
         {
           "date": "2026-04-05",
           "price_usd": 2052.06856362,
           "sma_50": 2044.10205702,
           "sma_200": null,
-          "rsi_14": 47.466
+          "rsi_14": 47.472
         },
         {
           "date": "2026-04-06",
           "price_usd": 2122.88740528,
           "sma_50": 2044.84569329,
           "sma_200": null,
-          "rsi_14": 53.169
+          "rsi_14": 53.172
         },
         {
           "date": "2026-04-07",
           "price_usd": 2100.80614027,
           "sma_50": 2047.51081766,
           "sma_200": null,
-          "rsi_14": 51.299
+          "rsi_14": 51.303
         },
         {
           "date": "2026-04-08",
           "price_usd": 2235.8222063,
           "sma_50": 2052.26374205,
           "sma_200": null,
-          "rsi_14": 60.456
+          "rsi_14": 60.458
         },
         {
           "date": "2026-04-09",
           "price_usd": 2179.79157008,
           "sma_50": 2055.97251921,
           "sma_200": null,
-          "rsi_14": 55.77
+          "rsi_14": 55.772
         },
         {
           "date": "2026-04-10",
           "price_usd": 2177.9725867,
           "sma_50": 2060.43890865,
           "sma_200": null,
-          "rsi_14": 55.619
+          "rsi_14": 55.621
         },
         {
           "date": "2026-04-11",
           "price_usd": 2244.74276661,
           "sma_50": 2066.34162724,
           "sma_200": null,
-          "rsi_14": 59.903
+          "rsi_14": 59.905
         },
         {
           "date": "2026-04-12",
           "price_usd": 2283.05711493,
           "sma_50": 2072.64420194,
           "sma_200": null,
-          "rsi_14": 62.16
+          "rsi_14": 62.162
         },
         {
           "date": "2026-04-13",
           "price_usd": 2189.22144388,
           "sma_50": 2076.95130901,
           "sma_200": null,
-          "rsi_14": 54.124
+          "rsi_14": 54.126
         },
         {
           "date": "2026-04-14",
           "price_usd": 2374.01620533,
           "sma_50": 2086.96667499,
           "sma_200": null,
-          "rsi_14": 63.996
+          "rsi_14": 63.997
         },
         {
           "date": "2026-04-15",
           "price_usd": 2326.44517747,
           "sma_50": 2096.31118033,
           "sma_200": null,
-          "rsi_14": 60.393
+          "rsi_14": 60.394
         },
         {
           "date": "2026-04-16",
           "price_usd": 2360.05916618,
           "sma_50": 2106.47072041,
           "sma_200": null,
-          "rsi_14": 62.02
+          "rsi_14": 62.021
         },
         {
           "date": "2026-04-17",
           "price_usd": 2348.98749239,
           "sma_50": 2112.38851561,
           "sma_200": null,
-          "rsi_14": 61.129
+          "rsi_14": 61.13
         },
         {
           "date": "2026-04-18",
@@ -3842,42 +3835,42 @@
           "price_usd": 2351.46002445,
           "sma_50": 2128.67104895,
           "sma_200": null,
-          "rsi_14": 59.06
+          "rsi_14": 59.061
         },
         {
           "date": "2026-04-20",
           "price_usd": 2264.19419826,
           "sma_50": 2134.62049459,
           "sma_200": null,
-          "rsi_14": 52.863
+          "rsi_14": 52.864
         },
         {
           "date": "2026-04-21",
           "price_usd": 2314.63860713,
           "sma_50": 2142.11735234,
           "sma_200": null,
-          "rsi_14": 55.753
+          "rsi_14": 55.754
         },
         {
           "date": "2026-04-22",
           "price_usd": 2326.66401269,
           "sma_50": 2148.07465237,
           "sma_200": null,
-          "rsi_14": 56.439
+          "rsi_14": 56.44
         },
         {
           "date": "2026-04-23",
           "price_usd": 2375.71445336,
           "sma_50": 2155.92991317,
           "sma_200": null,
-          "rsi_14": 59.215
+          "rsi_14": 59.216
         },
         {
           "date": "2026-04-24",
           "price_usd": 2331.09530879,
           "sma_50": 2160.00023579,
           "sma_200": null,
-          "rsi_14": 55.735
+          "rsi_14": 55.736
         },
         {
           "date": "2026-04-25",
@@ -3891,49 +3884,49 @@
           "price_usd": 2320.56640373,
           "sma_50": 2171.66718754,
           "sma_200": null,
-          "rsi_14": 54.868
+          "rsi_14": 54.869
         },
         {
           "date": "2026-04-27",
           "price_usd": 2369.15402926,
           "sma_50": 2179.62540873,
           "sma_200": null,
-          "rsi_14": 58.116
+          "rsi_14": 58.117
         },
         {
           "date": "2026-04-28",
           "price_usd": 2303.88425013,
           "sma_50": 2186.91525854,
           "sma_200": null,
-          "rsi_14": 52.636
+          "rsi_14": 52.637
         },
         {
           "date": "2026-04-29",
           "price_usd": 2289.19792844,
           "sma_50": 2192.83957657,
           "sma_200": null,
-          "rsi_14": 51.46
+          "rsi_14": 51.461
         },
         {
           "date": "2026-04-30",
           "price_usd": 2253.62004929,
           "sma_50": 2197.20849449,
           "sma_200": null,
-          "rsi_14": 48.626
+          "rsi_14": 48.627
         },
         {
           "date": "2026-05-01",
           "price_usd": 2256.94911237,
           "sma_50": 2201.30879445,
           "sma_200": null,
-          "rsi_14": 48.91
+          "rsi_14": 48.911
         },
         {
           "date": "2026-05-02",
           "price_usd": 2295.58344088,
           "sma_50": 2205.78206865,
           "sma_200": null,
-          "rsi_14": 52.206
+          "rsi_14": 52.207
         },
         {
           "date": "2026-05-03",
@@ -3961,7 +3954,7 @@
           "price_usd": 2360.64436629,
           "sma_50": 2218.49317265,
           "sma_200": null,
-          "rsi_14": 57.745
+          "rsi_14": 57.746
         },
         {
           "date": "2026-05-07",
@@ -4017,7 +4010,7 @@
           "price_usd": 2258.48390885,
           "sma_50": 2244.07035554,
           "sma_200": null,
-          "rsi_14": 45.516
+          "rsi_14": 45.517
         },
         {
           "date": "2026-05-15",
@@ -4031,21 +4024,21 @@
           "price_usd": 2223.93748868,
           "sma_50": 2249.6380271,
           "sma_200": null,
-          "rsi_14": 42.612
+          "rsi_14": 42.613
         },
         {
           "date": "2026-05-17",
           "price_usd": 2180.08911009,
           "sma_50": 2253.40883834,
           "sma_200": null,
-          "rsi_14": 38.93
+          "rsi_14": 38.931
         },
         {
           "date": "2026-05-18",
           "price_usd": 2130.74923013,
           "sma_50": 2256.13433254,
           "sma_200": null,
-          "rsi_14": 35.24
+          "rsi_14": 35.241
         },
         {
           "date": "2026-05-19",
@@ -4066,7 +4059,7 @@
           "price_usd": 2127.46893168,
           "sma_50": 2261.40353166,
           "sma_200": null,
-          "rsi_14": 36.291
+          "rsi_14": 36.292
         },
         {
           "date": "2026-05-22",
@@ -4101,7 +4094,7 @@
           "price_usd": 2110.59297175,
           "sma_50": 2263.60093368,
           "sma_200": null,
-          "rsi_14": 39.223
+          "rsi_14": 39.224
         },
         {
           "date": "2026-05-27",
@@ -4129,7 +4122,7 @@
           "price_usd": 2012.56078907,
           "sma_50": 2252.02289246,
           "sma_200": null,
-          "rsi_14": 31.817
+          "rsi_14": 31.818
         },
         {
           "date": "2026-05-31",
@@ -4185,14 +4178,14 @@
           "price_usd": 1568.70279464,
           "sma_50": 2173.47787952,
           "sma_200": null,
-          "rsi_14": 12.89
+          "rsi_14": 12.891
         },
         {
           "date": "2026-06-08",
           "price_usd": 1687.88268461,
           "sma_50": 2160.20633272,
           "sma_200": null,
-          "rsi_14": 27.818
+          "rsi_14": 27.819
         },
         {
           "date": "2026-06-09",
@@ -4471,8 +4464,8 @@
           "date": "2026-07-18",
           "price_usd": 1840.76811932,
           "sma_50": 1740.93891156,
-          "sma_200": 2194.31344893,
-          "rsi_14": 56.869
+          "sma_200": null,
+          "rsi_14": 56.87
         },
         {
           "date": "2026-07-19",
@@ -5376,14 +5369,16 @@
           "sma_50": 2226.23043717,
           "sma_200": 2119.59659956,
           "rsi_14": 29.335
+        },
+        {
+          "date": "2026-11-25",
+          "price_usd": 1677.95242572,
+          "sma_50": 2205.58112217,
+          "sma_200": 2116.44900983,
+          "rsi_14": 27.993
         }
       ],
       "risk_history": [
-        {
-          "date": "2026-07-18",
-          "score": 45,
-          "level": "Moderate"
-        },
         {
           "date": "2026-07-19",
           "score": 45,
@@ -6028,6 +6023,11 @@
           "date": "2026-11-24",
           "score": 80,
           "level": "Extreme"
+        },
+        {
+          "date": "2026-11-25",
+          "score": 80,
+          "level": "Extreme"
         }
       ],
       "buying_opportunity": {
@@ -6038,25 +6038,25 @@
             "name": "Price vs SMA200",
             "points": 18,
             "max": 25,
-            "detail": "+22.0% below the 200-day average (negative means above)."
+            "detail": "+20.2% below the 200-day average (negative means above)."
           },
           {
             "name": "Selling exhaustion (RSI)",
             "points": 16,
             "max": 20,
-            "detail": "RSI 29.3; oversold can remain oversold."
+            "detail": "RSI 28.0; oversold can remain oversold."
           },
           {
             "name": "Recovery confirmation",
             "points": 10,
             "max": 25,
-            "detail": "MACD histogram -11.7989; improving: yes; above SMA50: no."
+            "detail": "MACD histogram -7.7718; improving: yes; above SMA50: no."
           },
           {
             "name": "Completed 7-day trend",
             "points": 0,
             "max": 20,
-            "detail": "-6.1% across seven completed daily intervals."
+            "detail": "-8.0% across seven completed daily intervals."
           },
           {
             "name": "Volatility",
@@ -6070,33 +6070,33 @@
       },
       "opportunity": {
         "signal": "Consider Reducing",
-        "agreement": "2 of 6 constructive conditions",
+        "agreement": "1 of 6 constructive conditions",
         "reasons": [
           "Price is not above both moving averages.",
           "MACD histogram is negative and improving.",
-          "RSI is 29.3; an oversold reading alone is not a buy signal.",
+          "RSI is 28.0; an oversold reading alone is not a buy signal.",
           "Annualized 30-day volatility is 65.3%.",
-          "Latest completed daily volume is 1.17\u00d7 its previous 20-observation average."
+          "Latest completed daily volume is 0.82\u00d7 its previous 20-observation average."
         ],
         "note": "Market-only indicator. It does not account for holdings, entry price, taxes or time horizon."
       }
     },
     {
       "symbol": "AVAX",
-      "price_usd": 6.49,
-      "price_eur": 5.94,
-      "change_since_last_observation_pct": -4.326263197110036,
+      "price_usd": 6.64,
+      "price_eur": 6.05,
+      "change_since_last_observation_pct": 1.1112299102114864,
       "change_label": "Since last completed daily observation (not 24h change)",
-      "rsi_14": 34.13954500702714,
-      "sma_50": 8.82464827093173,
-      "sma_200": 7.979052511712375,
+      "rsi_14": 31.940502747480195,
+      "sma_50": 8.7333414392454,
+      "sma_200": 7.962348271455575,
       "macd": {
-        "line": -0.606650633530931,
-        "signal": -0.5472467286408798,
-        "histogram": -0.05940390489005121,
-        "previous_histogram": -0.08652639509234383
+        "line": -0.6073891136200888,
+        "signal": -0.5592752056464775,
+        "histogram": -0.04811390797361137,
+        "previous_histogram": -0.05940390488614833
       },
-      "volatility_30d_annualized_pct": 81.8151525448867,
+      "volatility_30d_annualized_pct": 82.193971695083,
       "risk": {
         "score": 80,
         "level": "Extreme",
@@ -6109,17 +6109,10 @@
           "30-day annualized volatility \u226565% (+10)"
         ]
       },
-      "volume_last_observation_usd": 212450223.33036286,
-      "volume_previous_20_average_usd": 220173446.51303673,
-      "last_completed_observation_date_utc": "2026-11-24",
+      "volume_last_observation_usd": 185031875.3772463,
+      "volume_previous_20_average_usd": 219989774.40035644,
+      "last_completed_observation_date_utc": "2026-11-25",
       "history": [
-        {
-          "date": "2025-12-31",
-          "price_usd": 12.55933568,
-          "sma_50": null,
-          "sma_200": null,
-          "rsi_14": null
-        },
         {
           "date": "2026-01-01",
           "price_usd": 12.30949632,
@@ -6216,903 +6209,903 @@
           "price_usd": 14.79190405,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 72.946
+          "rsi_14": null
         },
         {
           "date": "2026-01-15",
           "price_usd": 14.62754376,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 70.385
+          "rsi_14": 74.25
         },
         {
           "date": "2026-01-16",
           "price_usd": 13.83271056,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 59.505
+          "rsi_14": 62.972
         },
         {
           "date": "2026-01-17",
           "price_usd": 13.61084862,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 56.863
+          "rsi_14": 60.222
         },
         {
           "date": "2026-01-18",
           "price_usd": 13.75008489,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 58.12
+          "rsi_14": 61.363
         },
         {
           "date": "2026-01-19",
           "price_usd": 12.74857643,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 47.419
+          "rsi_14": 50.213
         },
         {
           "date": "2026-01-20",
           "price_usd": 12.74068582,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 47.345
+          "rsi_14": 50.136
         },
         {
           "date": "2026-01-21",
           "price_usd": 12.13312577,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 41.922
+          "rsi_14": 44.461
         },
         {
           "date": "2026-01-22",
           "price_usd": 12.46984276,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 45.638
+          "rsi_14": 47.975
         },
         {
           "date": "2026-01-23",
           "price_usd": 12.25280026,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 43.697
+          "rsi_14": 45.957
         },
         {
           "date": "2026-01-24",
           "price_usd": 12.17899187,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 43.027
+          "rsi_14": 45.259
         },
         {
           "date": "2026-01-25",
           "price_usd": 12.16361064,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 42.88
+          "rsi_14": 45.105
         },
         {
           "date": "2026-01-26",
           "price_usd": 11.52695612,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 37.193
+          "rsi_14": 39.177
         },
         {
           "date": "2026-01-27",
           "price_usd": 11.76132447,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 40.33
+          "rsi_14": 42.189
         },
         {
           "date": "2026-01-28",
           "price_usd": 12.1949987,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 45.732
+          "rsi_14": 47.382
         },
         {
           "date": "2026-01-29",
           "price_usd": 12.12782928,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 45.052
+          "rsi_14": 46.683
         },
         {
           "date": "2026-01-30",
           "price_usd": 11.07711405,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 36.025
+          "rsi_14": 37.386
         },
         {
           "date": "2026-01-31",
           "price_usd": 10.89790253,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 34.746
+          "rsi_14": 36.067
         },
         {
           "date": "2026-02-01",
           "price_usd": 10.15766955,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 30.008
+          "rsi_14": 31.174
         },
         {
           "date": "2026-02-02",
           "price_usd": 9.97183581,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 28.941
+          "rsi_14": 30.07
         },
         {
           "date": "2026-02-03",
           "price_usd": 10.18205706,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 31.891
+          "rsi_14": 32.96
         },
         {
           "date": "2026-02-04",
           "price_usd": 9.93931677,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 30.325
+          "rsi_14": 31.349
         },
         {
           "date": "2026-02-05",
           "price_usd": 9.74808045,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 29.113
+          "rsi_14": 30.101
         },
         {
           "date": "2026-02-06",
           "price_usd": 8.32771315,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 22.058
+          "rsi_14": 22.83
         },
         {
           "date": "2026-02-07",
           "price_usd": 9.26962088,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 33.557
+          "rsi_14": 34.184
         },
         {
           "date": "2026-02-08",
           "price_usd": 9.2610955,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 33.509
+          "rsi_14": 34.135
         },
         {
           "date": "2026-02-09",
           "price_usd": 9.16916312,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 32.959
+          "rsi_14": 33.576
         },
         {
           "date": "2026-02-10",
           "price_usd": 9.05788712,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 32.269
+          "rsi_14": 32.875
         },
         {
           "date": "2026-02-11",
           "price_usd": 8.74943162,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 30.371
+          "rsi_14": 30.947
         },
         {
           "date": "2026-02-12",
           "price_usd": 8.70187217,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 30.077
+          "rsi_14": 30.648
         },
         {
           "date": "2026-02-13",
           "price_usd": 8.97233986,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 33.987
+          "rsi_14": 34.517
         },
         {
           "date": "2026-02-14",
           "price_usd": 9.22107522,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 37.452
+          "rsi_14": 37.946
         },
         {
           "date": "2026-02-15",
           "price_usd": 9.67257904,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 43.271
+          "rsi_14": 43.708
         },
         {
           "date": "2026-02-16",
           "price_usd": 9.35007379,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 40.381
+          "rsi_14": 40.794
         },
         {
           "date": "2026-02-17",
           "price_usd": 9.33950857,
           "sma_50": null,
           "sma_200": null,
-          "rsi_14": 40.286
+          "rsi_14": 40.698
         },
         {
           "date": "2026-02-18",
           "price_usd": 9.24051471,
-          "sma_50": 11.75388407,
+          "sma_50": null,
           "sma_200": null,
-          "rsi_14": 39.353
+          "rsi_14": 39.757
         },
         {
           "date": "2026-02-19",
           "price_usd": 8.93869477,
           "sma_50": 11.68147126,
           "sma_200": null,
-          "rsi_14": 36.57
+          "rsi_14": 36.951
         },
         {
           "date": "2026-02-20",
           "price_usd": 8.97475153,
           "sma_50": 11.61477636,
           "sma_200": null,
-          "rsi_14": 37.142
+          "rsi_14": 37.518
         },
         {
           "date": "2026-02-21",
           "price_usd": 9.22247721,
           "sma_50": 11.52627608,
           "sma_200": null,
-          "rsi_14": 41.072
+          "rsi_14": 41.419
         },
         {
           "date": "2026-02-22",
           "price_usd": 9.2075683,
           "sma_50": 11.43405472,
           "sma_200": null,
-          "rsi_14": 40.906
+          "rsi_14": 41.252
         },
         {
           "date": "2026-02-23",
           "price_usd": 8.53889989,
           "sma_50": 11.32555963,
           "sma_200": null,
-          "rsi_14": 34.233
+          "rsi_14": 34.531
         },
         {
           "date": "2026-02-24",
           "price_usd": 8.45400036,
           "sma_50": 11.20876982,
           "sma_200": null,
-          "rsi_14": 33.486
+          "rsi_14": 33.779
         },
         {
           "date": "2026-02-25",
           "price_usd": 8.37382084,
           "sma_50": 11.08696424,
           "sma_200": null,
-          "rsi_14": 32.759
+          "rsi_14": 33.046
         },
         {
           "date": "2026-02-26",
           "price_usd": 9.54071613,
           "sma_50": 10.9862021,
           "sma_200": null,
-          "rsi_14": 49.83
+          "rsi_14": 50.028
         },
         {
           "date": "2026-02-27",
           "price_usd": 9.35384534,
           "sma_50": 10.89099115,
           "sma_200": null,
-          "rsi_14": 47.74
+          "rsi_14": 47.931
         },
         {
           "date": "2026-02-28",
           "price_usd": 9.0127639,
           "sma_50": 10.79360649,
           "sma_200": null,
-          "rsi_14": 44.103
+          "rsi_14": 44.283
         },
         {
           "date": "2026-03-01",
           "price_usd": 9.22901109,
           "sma_50": 10.70204758,
           "sma_200": null,
-          "rsi_14": 46.867
+          "rsi_14": 47.036
         },
         {
           "date": "2026-03-02",
           "price_usd": 9.07935429,
           "sma_50": 10.60769154,
           "sma_200": null,
-          "rsi_14": 45.201
+          "rsi_14": 45.366
         },
         {
           "date": "2026-03-03",
           "price_usd": 9.21286027,
           "sma_50": 10.51739872,
           "sma_200": null,
-          "rsi_14": 47.01
+          "rsi_14": 47.168
         },
         {
           "date": "2026-03-04",
           "price_usd": 9.23604196,
           "sma_50": 10.43186982,
           "sma_200": null,
-          "rsi_14": 47.335
+          "rsi_14": 47.492
         },
         {
           "date": "2026-03-05",
           "price_usd": 9.53270697,
           "sma_50": 10.32668588,
           "sma_200": null,
-          "rsi_14": 51.441
+          "rsi_14": 51.583
         },
         {
           "date": "2026-03-06",
           "price_usd": 9.44659673,
           "sma_50": 10.22306693,
           "sma_200": null,
-          "rsi_14": 50.217
+          "rsi_14": 50.356
         },
         {
           "date": "2026-03-07",
           "price_usd": 9.07800038,
           "sma_50": 10.12797273,
           "sma_200": null,
-          "rsi_14": 45.254
+          "rsi_14": 45.382
         },
         {
           "date": "2026-03-08",
           "price_usd": 9.01990992,
           "sma_50": 10.03615396,
           "sma_200": null,
-          "rsi_14": 44.508
+          "rsi_14": 44.634
         },
         {
           "date": "2026-03-09",
           "price_usd": 8.92018349,
           "sma_50": 9.93955593,
           "sma_200": null,
-          "rsi_14": 43.191
+          "rsi_14": 43.314
         },
         {
           "date": "2026-03-10",
           "price_usd": 9.30557701,
           "sma_50": 9.87069594,
           "sma_200": null,
-          "rsi_14": 49.421
+          "rsi_14": 49.527
         },
         {
           "date": "2026-03-11",
           "price_usd": 9.58078461,
           "sma_50": 9.80749792,
           "sma_200": null,
-          "rsi_14": 53.355
+          "rsi_14": 53.451
         },
         {
           "date": "2026-03-12",
           "price_usd": 9.55422567,
           "sma_50": 9.75591991,
           "sma_200": null,
-          "rsi_14": 52.927
+          "rsi_14": 53.023
         },
         {
           "date": "2026-03-13",
           "price_usd": 9.72565177,
           "sma_50": 9.70103609,
           "sma_200": null,
-          "rsi_14": 55.412
+          "rsi_14": 55.502
         },
         {
           "date": "2026-03-14",
           "price_usd": 9.74375799,
           "sma_50": 9.65085525,
           "sma_200": null,
-          "rsi_14": 55.678
+          "rsi_14": 55.767
         },
         {
           "date": "2026-03-15",
           "price_usd": 9.80891132,
           "sma_50": 9.60345364,
           "sma_200": null,
-          "rsi_14": 56.68
+          "rsi_14": 56.767
         },
         {
           "date": "2026-03-16",
           "price_usd": 10.04984177,
           "sma_50": 9.56117826,
           "sma_200": null,
-          "rsi_14": 60.259
+          "rsi_14": 60.337
         },
         {
           "date": "2026-03-17",
           "price_usd": 10.50009082,
           "sma_50": 9.54064095,
           "sma_200": null,
-          "rsi_14": 65.923
+          "rsi_14": 65.989
         },
         {
           "date": "2026-03-18",
           "price_usd": 10.2583361,
           "sma_50": 9.51058119,
           "sma_200": null,
-          "rsi_14": 60.904
+          "rsi_14": 60.965
         },
         {
           "date": "2026-03-19",
           "price_usd": 9.71768384,
           "sma_50": 9.46103489,
           "sma_200": null,
-          "rsi_14": 51.465
+          "rsi_14": 51.52
         },
         {
           "date": "2026-03-20",
           "price_usd": 9.54300721,
           "sma_50": 9.40933845,
           "sma_200": null,
-          "rsi_14": 48.832
+          "rsi_14": 48.885
         },
         {
           "date": "2026-03-21",
           "price_usd": 9.57848935,
           "sma_50": 9.37936596,
           "sma_200": null,
-          "rsi_14": 49.398
+          "rsi_14": 49.45
         },
         {
           "date": "2026-03-22",
           "price_usd": 9.19625064,
           "sma_50": 9.34533292,
           "sma_200": null,
-          "rsi_14": 43.777
+          "rsi_14": 43.824
         },
         {
           "date": "2026-03-23",
           "price_usd": 9.11746351,
           "sma_50": 9.3245288,
           "sma_200": null,
-          "rsi_14": 42.699
+          "rsi_14": 42.745
         },
         {
           "date": "2026-03-24",
           "price_usd": 9.61553212,
           "sma_50": 9.31740272,
           "sma_200": null,
-          "rsi_14": 50.929
+          "rsi_14": 50.967
         },
         {
           "date": "2026-03-25",
           "price_usd": 9.70118482,
           "sma_50": 9.30778528,
           "sma_200": null,
-          "rsi_14": 52.201
+          "rsi_14": 52.238
         },
         {
           "date": "2026-03-26",
           "price_usd": 9.75268521,
           "sma_50": 9.30405265,
           "sma_200": null,
-          "rsi_14": 52.99
+          "rsi_14": 53.026
         },
         {
           "date": "2026-03-27",
           "price_usd": 9.14725527,
           "sma_50": 9.29203614,
           "sma_200": null,
-          "rsi_14": 43.832
+          "rsi_14": 43.864
         },
         {
           "date": "2026-03-28",
           "price_usd": 8.7792534,
           "sma_50": 9.30106695,
           "sma_200": null,
-          "rsi_14": 39.378
+          "rsi_14": 39.407
         },
         {
           "date": "2026-03-29",
           "price_usd": 8.75596821,
           "sma_50": 9.29079389,
           "sma_200": null,
-          "rsi_14": 39.107
+          "rsi_14": 39.136
         },
         {
           "date": "2026-03-30",
           "price_usd": 8.59791372,
           "sma_50": 9.27753026,
           "sma_200": null,
-          "rsi_14": 37.235
+          "rsi_14": 37.263
         },
         {
           "date": "2026-03-31",
           "price_usd": 8.80153176,
           "sma_50": 9.27017763,
           "sma_200": null,
-          "rsi_14": 41.144
+          "rsi_14": 41.169
         },
         {
           "date": "2026-04-01",
           "price_usd": 8.90073912,
           "sma_50": 9.26703467,
           "sma_200": null,
-          "rsi_14": 43.006
+          "rsi_14": 43.03
         },
         {
           "date": "2026-04-02",
           "price_usd": 9.12899595,
           "sma_50": 9.27462596,
           "sma_200": null,
-          "rsi_14": 47.149
+          "rsi_14": 47.171
         },
         {
           "date": "2026-04-03",
           "price_usd": 8.7535101,
           "sma_50": 9.27565872,
           "sma_200": null,
-          "rsi_14": 41.77
+          "rsi_14": 41.79
         },
         {
           "date": "2026-04-04",
           "price_usd": 8.91213619,
           "sma_50": 9.27445464,
           "sma_200": null,
-          "rsi_14": 44.643
+          "rsi_14": 44.662
         },
         {
           "date": "2026-04-05",
           "price_usd": 8.99217023,
           "sma_50": 9.26987654,
           "sma_200": null,
-          "rsi_14": 46.089
+          "rsi_14": 46.107
         },
         {
           "date": "2026-04-06",
           "price_usd": 9.15211997,
           "sma_50": 9.25946736,
           "sma_200": null,
-          "rsi_14": 48.958
+          "rsi_14": 48.974
         },
         {
           "date": "2026-04-07",
           "price_usd": 8.89205836,
           "sma_50": 9.25030705,
           "sma_200": null,
-          "rsi_14": 44.785
+          "rsi_14": 44.801
         },
         {
           "date": "2026-04-08",
           "price_usd": 9.45853254,
           "sma_50": 9.25268753,
           "sma_200": null,
-          "rsi_14": 53.985
+          "rsi_14": 53.997
         },
         {
           "date": "2026-04-09",
           "price_usd": 9.04639971,
           "sma_50": 9.24880523,
           "sma_200": null,
-          "rsi_14": 47.751
+          "rsi_14": 47.762
         },
         {
           "date": "2026-04-10",
           "price_usd": 9.38290853,
           "sma_50": 9.25768951,
           "sma_200": null,
-          "rsi_14": 52.567
+          "rsi_14": 52.577
         },
         {
           "date": "2026-04-11",
           "price_usd": 9.39559988,
           "sma_50": 9.26610648,
           "sma_200": null,
-          "rsi_14": 52.744
+          "rsi_14": 52.754
         },
         {
           "date": "2026-04-12",
           "price_usd": 9.37560078,
           "sma_50": 9.26916895,
           "sma_200": null,
-          "rsi_14": 52.412
+          "rsi_14": 52.422
         },
         {
           "date": "2026-04-13",
           "price_usd": 9.03133888,
           "sma_50": 9.26564436,
           "sma_200": null,
-          "rsi_14": 46.939
+          "rsi_14": 46.948
         },
         {
           "date": "2026-04-14",
           "price_usd": 9.6927981,
           "sma_50": 9.28872232,
           "sma_200": null,
-          "rsi_14": 56.367
+          "rsi_14": 56.374
         },
         {
           "date": "2026-04-15",
           "price_usd": 9.31528326,
           "sma_50": 9.30594798,
           "sma_200": null,
-          "rsi_14": 50.817
+          "rsi_14": 50.824
         },
         {
           "date": "2026-04-16",
           "price_usd": 9.44265181,
           "sma_50": 9.3273246,
           "sma_200": null,
-          "rsi_14": 52.516
+          "rsi_14": 52.523
         },
         {
           "date": "2026-04-17",
           "price_usd": 9.73060314,
           "sma_50": 9.33112234,
           "sma_200": null,
-          "rsi_14": 56.199
+          "rsi_14": 56.205
         },
         {
           "date": "2026-04-18",
           "price_usd": 9.73681129,
           "sma_50": 9.33878166,
           "sma_200": null,
-          "rsi_14": 56.278
+          "rsi_14": 56.284
         },
         {
           "date": "2026-04-19",
           "price_usd": 9.33521517,
           "sma_50": 9.34523069,
           "sma_200": null,
-          "rsi_14": 50.014
+          "rsi_14": 50.02
         },
         {
           "date": "2026-04-20",
           "price_usd": 9.00647293,
           "sma_50": 9.34077992,
           "sma_200": null,
-          "rsi_14": 45.546
+          "rsi_14": 45.551
         },
         {
           "date": "2026-04-21",
           "price_usd": 9.27872275,
           "sma_50": 9.34476729,
           "sma_200": null,
-          "rsi_14": 49.565
+          "rsi_14": 49.569
         },
         {
           "date": "2026-04-22",
           "price_usd": 9.38832017,
           "sma_50": 9.34827649,
           "sma_200": null,
-          "rsi_14": 51.128
+          "rsi_14": 51.133
         },
         {
           "date": "2026-04-23",
           "price_usd": 9.34065541,
           "sma_50": 9.35036876,
           "sma_200": null,
-          "rsi_14": 50.397
+          "rsi_14": 50.401
         },
         {
           "date": "2026-04-24",
           "price_usd": 9.38383416,
           "sma_50": 9.3473913,
           "sma_200": null,
-          "rsi_14": 51.08
+          "rsi_14": 51.084
         },
         {
           "date": "2026-04-25",
           "price_usd": 9.39646456,
           "sma_50": 9.34638866,
           "sma_200": null,
-          "rsi_14": 51.291
+          "rsi_14": 51.295
         },
         {
           "date": "2026-04-26",
           "price_usd": 9.36439377,
           "sma_50": 9.35211653,
           "sma_200": null,
-          "rsi_14": 50.692
+          "rsi_14": 50.696
         },
         {
           "date": "2026-04-27",
           "price_usd": 9.46401466,
           "sma_50": 9.36099862,
           "sma_200": null,
-          "rsi_14": 52.545
+          "rsi_14": 52.549
         },
         {
           "date": "2026-04-28",
           "price_usd": 9.26631492,
           "sma_50": 9.36792125,
           "sma_200": null,
-          "rsi_14": 48.639
+          "rsi_14": 48.642
         },
         {
           "date": "2026-04-29",
           "price_usd": 9.17274411,
           "sma_50": 9.36526459,
           "sma_200": null,
-          "rsi_14": 46.863
+          "rsi_14": 46.866
         },
         {
           "date": "2026-04-30",
           "price_usd": 9.11942908,
           "sma_50": 9.35603748,
           "sma_200": null,
-          "rsi_14": 45.836
+          "rsi_14": 45.839
         },
         {
           "date": "2026-05-01",
           "price_usd": 9.08991405,
           "sma_50": 9.34675125,
           "sma_200": null,
-          "rsi_14": 45.245
+          "rsi_14": 45.248
         },
         {
           "date": "2026-05-02",
           "price_usd": 9.0861717,
           "sma_50": 9.33396165,
           "sma_200": null,
-          "rsi_14": 45.165
+          "rsi_14": 45.169
         },
         {
           "date": "2026-05-03",
           "price_usd": 9.18177181,
           "sma_50": 9.32272192,
           "sma_200": null,
-          "rsi_14": 47.695
+          "rsi_14": 47.698
         },
         {
           "date": "2026-05-04",
           "price_usd": 9.07749969,
           "sma_50": 9.30809369,
           "sma_200": null,
-          "rsi_14": 45.243
+          "rsi_14": 45.246
         },
         {
           "date": "2026-05-05",
           "price_usd": 9.17327275,
           "sma_50": 9.29056231,
           "sma_200": null,
-          "rsi_14": 47.892
+          "rsi_14": 47.895
         },
         {
           "date": "2026-05-06",
           "price_usd": 9.40415092,
           "sma_50": 9.26864351,
           "sma_200": null,
-          "rsi_14": 53.707
+          "rsi_14": 53.709
         },
         {
           "date": "2026-05-07",
           "price_usd": 9.61208372,
           "sma_50": 9.25571846,
           "sma_200": null,
-          "rsi_14": 58.228
+          "rsi_14": 58.23
         },
         {
           "date": "2026-05-08",
           "price_usd": 9.50211086,
           "sma_50": 9.25140701,
           "sma_200": null,
-          "rsi_14": 55.16
+          "rsi_14": 55.162
         },
         {
           "date": "2026-05-09",
           "price_usd": 9.9078733,
           "sma_50": 9.25870433,
           "sma_200": null,
-          "rsi_14": 62.923
+          "rsi_14": 62.924
         },
         {
           "date": "2026-05-10",
           "price_usd": 9.96418235,
           "sma_50": 9.26641819,
           "sma_200": null,
-          "rsi_14": 63.858
+          "rsi_14": 63.859
         },
         {
           "date": "2026-05-11",
           "price_usd": 10.22774243,
           "sma_50": 9.28704802,
           "sma_200": null,
-          "rsi_14": 67.934
+          "rsi_14": 67.936
         },
         {
           "date": "2026-05-12",
           "price_usd": 10.12376483,
           "sma_50": 9.30717405,
           "sma_200": null,
-          "rsi_14": 64.828
+          "rsi_14": 64.829
         },
         {
           "date": "2026-05-13",
           "price_usd": 9.83333396,
           "sma_50": 9.31153009,
           "sma_200": null,
-          "rsi_14": 56.989
+          "rsi_14": 56.99
         },
         {
           "date": "2026-05-14",
           "price_usd": 9.75098127,
           "sma_50": 9.31252601,
           "sma_200": null,
-          "rsi_14": 54.959
+          "rsi_14": 54.961
         },
         {
           "date": "2026-05-15",
           "price_usd": 9.89762076,
           "sma_50": 9.31542473,
           "sma_200": null,
-          "rsi_14": 57.838
+          "rsi_14": 57.839
         },
         {
           "date": "2026-05-16",
           "price_usd": 9.53503002,
           "sma_50": 9.32318022,
           "sma_200": null,
-          "rsi_14": 49.425
+          "rsi_14": 49.426
         },
         {
           "date": "2026-05-17",
           "price_usd": 9.29048977,
           "sma_50": 9.33340495,
           "sma_200": null,
-          "rsi_14": 44.703
+          "rsi_14": 44.704
         },
         {
           "date": "2026-05-18",
           "price_usd": 9.19230827,
           "sma_50": 9.34213175,
           "sma_200": null,
-          "rsi_14": 42.929
+          "rsi_14": 42.93
         },
         {
           "date": "2026-05-19",
           "price_usd": 9.23780362,
           "sma_50": 9.35492955,
           "sma_200": null,
-          "rsi_14": 44.037
+          "rsi_14": 44.038
         },
         {
           "date": "2026-05-20",
           "price_usd": 9.09749221,
           "sma_50": 9.36084876,
           "sma_200": null,
-          "rsi_14": 41.37
+          "rsi_14": 41.371
         },
         {
           "date": "2026-05-21",
           "price_usd": 9.28725891,
           "sma_50": 9.36857915,
           "sma_200": null,
-          "rsi_14": 46.123
+          "rsi_14": 46.124
         },
         {
           "date": "2026-05-22",
           "price_usd": 9.44040006,
           "sma_50": 9.37480723,
           "sma_200": null,
-          "rsi_14": 49.669
+          "rsi_14": 49.67
         },
         {
           "date": "2026-05-23",
@@ -7147,21 +7140,21 @@
           "price_usd": 9.13108062,
           "sma_50": 9.40404574,
           "sma_200": null,
-          "rsi_14": 44.369
+          "rsi_14": 44.37
         },
         {
           "date": "2026-05-28",
           "price_usd": 9.02972736,
           "sma_50": 9.39546964,
           "sma_200": null,
-          "rsi_14": 42.463
+          "rsi_14": 42.464
         },
         {
           "date": "2026-05-29",
           "price_usd": 8.91977837,
           "sma_50": 9.39293721,
           "sma_200": null,
-          "rsi_14": 40.434
+          "rsi_14": 40.435
         },
         {
           "date": "2026-05-30",
@@ -7175,21 +7168,21 @@
           "price_usd": 8.94514922,
           "sma_50": 9.37267092,
           "sma_200": null,
-          "rsi_14": 42.118
+          "rsi_14": 42.119
         },
         {
           "date": "2026-06-01",
           "price_usd": 8.9701102,
           "sma_50": 9.36456111,
           "sma_200": null,
-          "rsi_14": 42.816
+          "rsi_14": 42.817
         },
         {
           "date": "2026-06-02",
           "price_usd": 8.92308335,
           "sma_50": 9.362396,
           "sma_200": null,
-          "rsi_14": 41.793
+          "rsi_14": 41.794
         },
         {
           "date": "2026-06-03",
@@ -7245,14 +7238,14 @@
           "price_usd": 6.63527506,
           "sma_50": 9.00169043,
           "sma_200": null,
-          "rsi_14": 19.857
+          "rsi_14": 19.858
         },
         {
           "date": "2026-06-11",
           "price_usd": 6.38060212,
           "sma_50": 8.94153607,
           "sma_200": null,
-          "rsi_14": 18.155
+          "rsi_14": 18.156
         },
         {
           "date": "2026-06-12",
@@ -7301,7 +7294,7 @@
           "price_usd": 6.75894427,
           "sma_50": 8.57719666,
           "sma_200": null,
-          "rsi_14": 31.171
+          "rsi_14": 31.172
         },
         {
           "date": "2026-06-19",
@@ -7322,7 +7315,7 @@
           "price_usd": 6.23632854,
           "sma_50": 8.4000698,
           "sma_200": null,
-          "rsi_14": 31.012
+          "rsi_14": 31.013
         },
         {
           "date": "2026-06-22",
@@ -7357,7 +7350,7 @@
           "price_usd": 6.22789299,
           "sma_50": 8.1010707,
           "sma_200": null,
-          "rsi_14": 35.017
+          "rsi_14": 35.018
         },
         {
           "date": "2026-06-27",
@@ -7476,7 +7469,7 @@
           "price_usd": 6.40235204,
           "sma_50": 7.11244712,
           "sma_200": null,
-          "rsi_14": 41.318
+          "rsi_14": 41.319
         },
         {
           "date": "2026-07-14",
@@ -7510,7 +7503,7 @@
           "date": "2026-07-18",
           "price_usd": 6.58352439,
           "sma_50": 6.85950111,
-          "sma_200": 9.31378191,
+          "sma_200": null,
           "rsi_14": 46.753
         },
         {
@@ -8415,14 +8408,16 @@
           "sma_50": 8.82464827,
           "sma_200": 7.97905251,
           "rsi_14": 34.14
+        },
+        {
+          "date": "2026-11-25",
+          "price_usd": 6.56702525,
+          "sma_50": 8.73334144,
+          "sma_200": 7.96234827,
+          "rsi_14": 31.941
         }
       ],
       "risk_history": [
-        {
-          "date": "2026-07-18",
-          "score": 65,
-          "level": "High"
-        },
         {
           "date": "2026-07-19",
           "score": 65,
@@ -9067,41 +9062,46 @@
           "date": "2026-11-24",
           "score": 80,
           "level": "Extreme"
+        },
+        {
+          "date": "2026-11-25",
+          "score": 80,
+          "level": "Extreme"
         }
       ],
       "buying_opportunity": {
-        "score": 51,
-        "label": "Potential Accumulation",
+        "score": 47,
+        "label": "Wait",
         "factors": [
           {
             "name": "Price vs SMA200",
             "points": 18,
             "max": 25,
-            "detail": "+18.7% below the 200-day average (negative means above)."
+            "detail": "+16.6% below the 200-day average (negative means above)."
           },
           {
             "name": "Selling exhaustion (RSI)",
             "points": 16,
             "max": 20,
-            "detail": "RSI 34.1; oversold can remain oversold."
+            "detail": "RSI 31.9; oversold can remain oversold."
           },
           {
             "name": "Recovery confirmation",
             "points": 10,
             "max": 25,
-            "detail": "MACD histogram -0.0594; improving: yes; above SMA50: no."
+            "detail": "MACD histogram -0.0481; improving: yes; above SMA50: no."
           },
           {
             "name": "Completed 7-day trend",
-            "points": 4,
+            "points": 0,
             "max": 20,
-            "detail": "-4.6% across seven completed daily intervals."
+            "detail": "-9.9% across seven completed daily intervals."
           },
           {
             "name": "Volatility",
             "points": 3,
             "max": 10,
-            "detail": "81.8% annualized 30-day volatility."
+            "detail": "82.2% annualized 30-day volatility."
           }
         ],
         "confirmation_cap_applied": false,
@@ -9113,15 +9113,15 @@
         "reasons": [
           "Price is not above both moving averages.",
           "MACD histogram is negative and improving.",
-          "RSI is 34.1; an oversold reading alone is not a buy signal.",
-          "Annualized 30-day volatility is 81.8%.",
-          "Latest completed daily volume is 0.96\u00d7 its previous 20-observation average."
+          "RSI is 31.9; an oversold reading alone is not a buy signal.",
+          "Annualized 30-day volatility is 82.2%.",
+          "Latest completed daily volume is 0.84\u00d7 its previous 20-observation average."
         ],
         "note": "Market-only indicator. It does not account for holdings, entry price, taxes or time horizon."
       }
     }
   ],
-  "analysis": "# Market Overview\n\nAs of the latest completed daily observation (2026-11-24), major cryptocurrencies BTC, ETH, and AVAX have all experienced price declines ranging from roughly 3.2% to 4.3% in USD terms compared to the prior day. Prices remain below both their 50-day and 200-day moving averages, indicating a bearish trend. \n\nKey momentum indicators including MACD histograms are negative but showing some signs of improvement. Relative Strength Index (RSI) readings for all three assets are in oversold or near-oversold territory, suggesting selling pressure may be exhausted; however, oversold conditions can persist without confirming a recovery. \n\nVolatility remains elevated for these assets, with AVAX notably showing over 80% annualized 30-day volatility, ETH above 65%, and BTC around 47%. Volume levels are mixed but generally close to or slightly above recent averages.\n\n# ETH and AVAX\n\nETH is trading around $1,653 USD (\u20ac1,512), down 3.25% since the last observation. It is about 22% below its 200-day average, with an RSI near 29, signaling potential oversold conditions. The MACD histogram is negative but improving. The buying opportunity label for ETH is \"Wait,\" reflecting uncertain recovery, while the overall signal advises \"Consider Reducing.\"\n\nAVAX trades near $6.49 USD (\u20ac5.94), down 4.3%. It sits about 18.7% below the 200-day average with an RSI of 34.1, in a marginally less oversold zone versus ETH. AVAX\u2019s MACD histogram is also negative yet improving. The buying opportunity label states \"Potential Accumulation,\" indicating possible early signs of attractiveness, but the market signal remains to \"Consider Reducing.\"\n\nBoth ETH and AVAX currently exhibit extreme bearish risk scores of 80 due to their prices being below major moving averages, negative momentum, oversold RSI zones, and very high volatility\u2014factors that point to a challenging trading environment.\n\n# Risk Watch\n\nAll three assets show **Extreme** risk levels\u201475 for BTC and 80 for both ETH and AVAX. These scores are quantitative assessments based on:\n\n- Price below 200-day and 50-day averages (important trend benchmarks),\n- Negative MACD histograms indicating bearish momentum,\n- RSI levels in oversold territory,\n- Elevated 30-day annualized volatility (46.5%+ for BTC, exceeding 65% for ETH and AVAX).\n\nThese risk scores highlight heightened potential for price swings and adverse moves. \n\n**Important:** Risk scores capture position risk and market conditions, reflecting how vulnerable holdings might be to negative moves. They do not represent personalized investment advice or the likelihood of gains/losses. Importantly, the \u201cbuying opportunity\u201d score uses a different heuristic\u2014focused on spotting potential market conditions where accumulation might be attractive\u2014and sometimes these signals may conflict. For example, an asset can score high as a potential accumulation opportunity but simultaneously have extreme position risk.\n\n# What to Monitor\n\n- **Momentum confirmation:** Watch if MACD histograms continue improving and cross toward positive territory, which could suggest a confirmed recovery rather than just oversold bounce.\n- **RSI behavior:** Observe if RSI rises above oversold zones sustainably rather than fluctuating around them.\n- **Volume trends:** Note if trading volumes increase significantly above averages, supporting momentum shifts.\n- **Price vs moving averages:** A sustained move back above 50-day and especially 200-day averages would be key to shifting current bearish trends.\n- **Volatility:** Continued elevated volatility implies larger price swings; this can amplify both risks and opportunities.\n\n---\n\nIn summary, all three cryptos remain in a bearish regime with extreme risk indicators. Potential early accumulation signs exist but lack full confirmation. Caution and close monitoring of momentum and volume changes remain prudent for market participants.",
+  "analysis": "# Market Overview\n\nAs of November 25, 2026, Bitcoin (BTC), Ethereum (ETH), and Avalanche (AVAX) are all trading below their 50-day and 200-day moving averages, reflecting ongoing bearish trends. BTC is priced at approximately $60,510 (55,150 EUR), ETH at around $1,689 (1,539 EUR), and AVAX near $6.64 (6.05 EUR). All three assets experienced modest gains since the last completed daily observation\u2014BTC +1.26%, ETH +0.64%, and AVAX +1.11%\u2014but remain far below recent longer-term average price levels.\n\n# ETH and AVAX\n\nBoth ETH and AVAX share similar technical profiles. Their Relative Strength Index (RSI) values are low\u201427.99 for ETH and 31.94 for AVAX\u2014indicating oversold conditions, but this does not constitute a confirmed recovery. The MACD histograms for both remain negative but show signs of gradual improvement. The price for each remains approximately 16\u201320% below the 200-day moving average, suggesting sustained downward pressure.\n\nTheir buying opportunity scores are labeled as \"Wait,\" reflecting some potential for oversold bounce but no clear evidence of trend reversal. Volatility is considerably elevated, with 30-day annualized figures around 65% for ETH and 82% for AVAX, indicating higher risk and price fluctuations.\n\n# Risk Watch\n\nAll three cryptocurrencies carry an \"Extreme\" risk level, with risk scores ranging from 75 (BTC) to 80 (ETH and AVAX). These scores derive from multiple bearish factors:\n\n- Price below both 50-day and 200-day averages (+45 points)\n- Negative MACD histograms (+15 points)\n- RSI values in oversold zones (+10 points)\n- Volatility at or above 46.8% for BTC and well above 65% for ETH and AVAX (additional +5 to +10 points)\n\nThis elevated risk score signals heightened position risk\u2014potential for increased price fluctuations and downside exposure\u2014not to be confused with the independent \"buying opportunity\" score, which attempts to identify conditions favorable for accumulation but does not guarantee price recovery or reduce risk on its own.\n\n# What to Monitor\n\n- **Price vs. Moving Averages:** Watch if prices move above the 50-day and 200-day averages, which might signal stabilization or recovery.\n- **MACD Histogram Change:** While negative currently, improving MACD histograms may indicate momentum shifts; however, confirm alongside other indicators.\n- **RSI Levels:** Moderate improvements in RSI could support a possible oversold bounce but require confirmation to suggest recovery.\n- **Volatility Trends:** High volatility increases risk; a sustained decrease could improve risk conditions.\n- **Trading Volume:** Recent daily volumes are below 85% of the 20-day average for all three assets, signaling less market participation or interest that may affect price reliability.\n\n**Note:** All opportunity scores and risk evaluations are heuristic, independent analyses based solely on market data. They do not account for personal holdings, entry prices, taxes, or investment time horizons. The labels \"Potential Accumulation\" or \"Wait\" describe market conditions and are not personalized buy/sell advice. An oversold reading alone does not confirm a recovery; it may persist before any upward trend emerges.",
   "buying_opportunity_methodology": "Independent 0\u2013100 heuristic: discount to SMA200 (25), RSI selling exhaustion (20), MACD/SMA50 recovery confirmation (25), seven-completed-day trend (20), annualized 30-day volatility (10). Without positive MACD or improving MACD, score capped at 69. Bands: 0\u201324 Unattractive; 25\u201349 Wait; 50\u201369 Potential Accumulation; 70\u201384 Attractive; 85\u2013100 Strong Opportunity. Unvalidated, not a forecast or trade instruction.",
   "opportunity_methodology": "Rule-based, market-only signal. Constructive conditions: price above both SMAs, positive MACD histogram, improving MACD histogram, RSI 40\u201368, volatility below 65%, and latest completed volume at least its previous 20-day average. Buy Opportunity requires at least 5/6 and risk below 40; Accumulate Cautiously requires at least 4/6, improving MACD and risk below 60. Downside warnings depend on high risk, price below both SMAs and negative MACD. Missing volume cannot qualify for Buy Opportunity. Signals are not trading instructions.",
   "risk_methodology": "Heuristic score 0\u2013100: below SMA200 +25; below SMA50 +20; SMA50 below SMA200 +15; negative MACD histogram +15; RSI <35 or >75 +10; annualized 30d volatility \u226540% +5, \u226565% +10, \u2265100% +15. Low <25, Moderate 25\u201349, High 50\u201374, Extreme \u226575. Not a probability or a prediction.",
